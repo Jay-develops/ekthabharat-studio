@@ -1,74 +1,59 @@
-Part 1/3 (hook_elephant, title, kalinjar, rule): 11 lines
-  gemini-2.5-flash-preview-tts: 61.8s audio (request 1/9)
-  new take: 61.8s, 48.5s spoken, 11.7 letters/s
-  cut by speech recognition (text match 86%)
-  line  0:  3.38s spoken (expected ~ 2.6s), pause after 0.50s  एक तीर आँख के पास धँसा… दूसरा गर्दन में।
-  line  1:  2.42s spoken (expected ~ 2.4s), pause after 0.39s  और फिर भी वो रानी हाथी से नहीं उतरी।
-  line  2:  3.03s spoken (expected ~ 2.8s), pause after 0.39s  सामने अकबर की सेना… और पीछे उफनती हुई नद
-  line  3:  2.25s spoken (expected ~ 2.3s), pause after 0.36s  महावत चीखा — रानी साहिबा, निकल चलिए!
-  line  4:  4.66s spoken (expected ~ 4.3s), pause after 0.33s  रानी ने जो जवाब दिया… वो साढ़े चार सौ सा
-  line  5:  4.29s spoken (expected ~ 4.5s), pause after 0.43s  रानी दुर्गावती… गोंडवाना की वो रानी, जो 
-  line  6:  5.53s spoken (expected ~ 6.7s), pause after 0.42s  पर ये कहानी शुरू होती है कालिंजर के क़िल
-  line  7:  4.05s spoken (expected ~ 4.0s), pause after 0.39s  शादी हुई गोंड राजा दलपत शाह से… पर कुछ ह
-  line  8:  3.08s spoken (expected ~ 3.1s), pause after 0.36s  गोद में पाँच साल का बेटा… और सामने पूरा 
-  line  9:  8.28s spoken (expected ~ 8.3s), pause after 0.41s  दरबार में फुसफुसाहट हुई — एक औरत राज कैस
-  line 10:  7.51s spoken (expected ~ 7.5s), pause after 0.00s  मालवा का सुल्तान बाज़ बहादुर सोचकर आया —
-    line  0 final 4.32s
-    line  1 final 2.63s
-    line  2 final 3.75s
-    line  3 final 2.40s
-    line  4 final 5.41s
-    line  5 final 5.56s
-    line  6 final 6.82s
-    line  7 final 4.76s
-    line  8 final 3.90s
-    line  9 final 10.51s
-    line 10 final 8.14s
-Part 2/3 (akbar, battle): 6 lines
-  gemini-2.5-flash-preview-tts: 48.9s audio (request 2/9)
-  new take: 48.9s, 33.7s spoken, 13.2 letters/s
-  cut by speech recognition (text match 84%)
-  line 11:  7.18s spoken (expected ~ 6.8s), pause after 0.76s  पर वही दौलत दिल्ली तक भी पहुँची… और 1564
-  line 12:  5.54s spoken (expected ~ 5.7s), pause after 0.79s  रानी के पास गिनती के सैनिक थे। सलाहकार ब
-  line 13:  3.64s spoken (expected ~ 4.0s), pause after 0.54s  कहते हैं, फिर बोलीं — ग़ुलामी की ज़िंदगी
-  line 14:  8.61s spoken (expected ~ 8.8s), pause after 0.70s  नरई के नाले के पास पहली टक्कर हुई… और रा
-  line 15:  5.15s spoken (expected ~ 4.9s), pause after 0.72s  और अगली सुबह… सब कुछ पलट गया। मुग़ल तोपे
-  line 16:  3.54s spoken (expected ~ 3.4s), pause after 0.00s  एक तीर… फिर दूसरा। साथी गिरते गए… पर रान
-    line 11 final 10.16s
-    line 12 final 7.84s
-    line 13 final 4.92s
-    line 14 final 10.44s
-    line 15 final 6.58s
-    line 16 final 4.96s
-Part 3/3 (fall, legacy, end): 7 lines
-  gemini-2.5-flash-preview-tts: 60.4s audio (request 3/9)
-  new take: 60.4s, 35.6s spoken, 11.8 letters/s
-  cut by speech recognition (text match 88%)
-  line 17:  7.00s spoken (expected ~ 6.5s), pause after 2.67s  और यही वो पल था, जहाँ से ये कहानी शुरू ह
-  line 18:  4.16s spoken (expected ~ 4.6s), pause after 3.07s  कहते हैं, उन्होंने अपने साथी से कहा — मु
-  line 19:  5.15s spoken (expected ~ 5.1s), pause after 2.68s  और जब कोई रास्ता न बचा… रानी ने ख़ुद अपन
-  line 20:  6.64s spoken (expected ~ 6.3s), pause after 3.08s  उनका बेटा वीर नारायण भी चौरागढ़ में लड़त
-  line 21:  6.53s spoken (expected ~ 6.8s), pause after 2.90s  आज हर 24 जून को उनका बलिदान दिवस मनाया ज
-  line 22:  3.48s spoken (expected ~ 3.5s), pause after 2.73s  हार जाना और झुक जाना… दोनों में बहुत फ़र
-  line 23:  2.66s spoken (expected ~ 2.8s), pause after 0.00s  अगली कहानी किसकी हो? कमेंट में नाम लिखिए
-    line 17 final 9.43s
-    line 18 final 5.05s
-    line 19 final 6.35s
-    line 20 final 8.36s
-    line 21 final 7.40s
-    line 22 final 3.74s
-    line 23 final 2.74s
-Voice done: 24 lines, 146.2s of speech, 3 new requests
+Part 1/3 (hook_sea, title, father, ganga): 8 lines
+  gemini-2.5-flash-preview-tts: 49.0s audio (request 1/9)
+  new take: 49.0s, 37.8s spoken, 12.5 letters/s
+  speech recognition did not line up (text match 69%) - using pause matching
+  cut by pause matching
+  line  0:  5.07s spoken (expected ~ 4.3s), pause after 0.50s  हज़ार साल पहले… एक भारतीय राजा ने अपनी प
+  line  1:  6.16s spoken (expected ~ 6.4s), pause after 0.44s  और समंदर पार, हज़ारों किलोमीटर दूर एक सा
+  line  2:  2.29s spoken (expected ~ 2.5s), pause after 0.43s  पर ये राजा था कौन… और उसने ऐसा क्यों किय
+  line  3:  5.62s spoken (expected ~ 5.0s), pause after 0.45s  राजेंद्र चोल… वो राजा, जिसकी नौसेना ने स
+  line  4:  5.75s spoken (expected ~ 6.3s), pause after 0.33s  उनके पिता राजराज चोल कोई मामूली राजा नही
+  line  5:  1.71s spoken (expected ~ 1.8s), pause after 0.28s  पर बेटा… पिता से भी आगे निकला।
+  line  6:  5.03s spoken (expected ~ 5.2s), pause after 0.43s  राजेंद्र की सेना उत्तर में गंगा तक गई… औ
+  line  7:  6.21s spoken (expected ~ 6.3s), pause after 0.00s  इसीलिए उन्हें कहा गया गंगैकोंड चोल… यानी
+    line  0 final 6.26s
+    line  1 final 7.77s
+    line  2 final 3.02s
+    line  3 final 6.64s
+    line  4 final 6.94s
+    line  5 final 2.27s
+    line  6 final 5.96s
+    line  7 final 7.51s
+Part 2/3 (srivijaya, attack): 4 lines
+  gemini-2.5-flash-preview-tts: 38.8s audio (request 2/9)
+  new take: 38.8s, 23.6s spoken, 13.6 letters/s
+  cut by speech recognition (text match 87%)
+  line  8:  7.86s spoken (expected ~ 8.1s), pause after 3.03s  पर असली चुनौती ज़मीन पर नहीं, समंदर में 
+  line  9:  5.31s spoken (expected ~ 5.2s), pause after 3.12s  तो राजेंद्र ने वो किया जो उस दौर में लगभ
+  line 10:  4.78s spoken (expected ~ 4.9s), pause after 2.84s  हफ़्तों का सफ़र… अनजान पानी… और फिर एक स
+  line 11:  5.68s spoken (expected ~ 5.5s), pause after 0.00s  हमला! एक के बाद एक बंदरगाह गिरते गए… कडा
+    line  8 final 9.85s
+    line  9 final 6.19s
+    line 10 final 6.10s
+    line 11 final 7.43s
+Part 3/3 (legacy, twist, end): 4 lines
+  gemini-2.5-flash-preview-tts: 25.8s audio (request 3/9)
+  new take: 25.8s, 18.0s spoken, 13.7 letters/s
+  cut by speech recognition (text match 92%)
+  line 12:  4.71s spoken (expected ~ 4.4s), pause after 0.70s  समंदर के रास्ते फिर खुल गए… और दक्षिण-पू
+  line 13:  5.14s spoken (expected ~ 5.1s), pause after 0.81s  और इसका सबूत? सुमात्रा में आज भी तमिल व्
+  line 14:  3.93s spoken (expected ~ 3.7s), pause after 0.94s  और गंगैकोंड चोलपुरम का वो मंदिर… आज यूने
+  line 15:  4.21s spoken (expected ~ 4.7s), pause after 0.00s  हज़ार साल पहले की ये नौसेना… क्या आपको स
+    line 12 final 6.30s
+    line 13 final 6.51s
+    line 14 final 4.75s
+    line 15 final 5.58s
+Voice done: 16 lines, 99.1s of speech, 3 new requests
 
-Length 157.2s (pauses x1.0, voice speed x1.000)
-  hook_elephant  19.91s  0.00-4.32  4.52-7.15  7.45-11.20  11.40-13.80  14.10-19.51
-  title         6.41s  0.15-5.71
-  kalinjar     16.68s  0.15-6.97  7.22-11.98  12.28-16.18
-  rule         19.60s  0.15-10.66  10.96-19.10
-  akbar        24.47s  0.15-10.31  10.61-18.45  18.95-23.87
-  battle       23.13s  0.15-10.59  10.89-17.47  17.77-22.73
-  fall         22.48s  0.15-9.58  9.98-15.03  15.33-21.68
-  legacy       16.71s  0.15-8.51  8.91-16.31
-  end           7.83s  0.15-3.89  4.29-7.03
-Rendered 9 scenes in 143s
-Final: 09 - Rani Durgavati - Gondwana.mp4 157.2s (timeline 157.2s) 67.7 MB
+Length 106.5s (pauses x1.0, voice speed x1.000)
+  hook_sea     17.95s  0.00-6.26  6.46-14.23  14.53-17.55
+  title         7.49s  0.15-6.79
+  father       10.01s  0.15-7.09  7.34-9.61
+  ganga        14.27s  0.15-6.11  6.36-13.87
+  srivijaya    16.89s  0.15-10.00  10.30-16.49
+  attack       14.38s  0.15-6.25  6.45-13.88
+  legacy        6.75s  0.15-6.45
+  twist        12.21s  0.15-6.66  6.96-11.71
+  end           6.53s  0.15-5.73
+Rendered 9 scenes in 131s
+Final: 11 - Rajendra Chola - Samudra Vijay.mp4 106.4s (timeline 106.5s) 45.9 MB

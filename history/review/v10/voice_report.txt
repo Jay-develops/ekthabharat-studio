@@ -1,0 +1,49 @@
+Part 1/3 (hook_arsenal, title, princess, attack): 7 lines
+  gemini-2.5-flash-preview-tts: 52.3s audio (request 1/9)
+  new take: 52.3s, 37.8s spoken, 12.4 letters/s
+  cut by speech recognition (text match 91%)
+  line  0:  4.58s spoken (expected ~ 4.3s), pause after 0.71s  एक औरत… अपने ऊपर घी उड़ेल रही थी। कहते ह
+  line  1:  5.17s spoken (expected ~ 5.5s), pause after 0.51s  क्योंकि सामने था अंग्रेज़ों का बारूदख़ान
+  line  2:  6.25s spoken (expected ~ 6.4s), pause after 0.52s  रानी वेलु नाच्चियार… और उनकी सेनापति कुय
+  line  3:  7.00s spoken (expected ~ 6.8s), pause after 0.50s  पर पीछे चलते हैं। रामनाथपुरम की एक राजकु
+  line  4:  4.39s spoken (expected ~ 4.4s), pause after 0.54s  शादी हुई शिवगंगा के राजा मुत्तु वडुगनाथ 
+  line  5:  5.81s spoken (expected ~ 6.1s), pause after 0.39s  फिर आया 1772। अंग्रेज़ों और अर्काट के नव
+  line  6:  4.57s spoken (expected ~ 4.3s), pause after 0.00s  रानी के पास बची थी बस एक छोटी बेटी… और ए
+    line  0 final 7.20s
+    line  1 final 6.35s
+    line  2 final 7.88s
+    line  3 final 9.41s
+    line  4 final 5.03s
+    line  5 final 7.12s
+    line  6 final 5.59s
+Part 2/3 (exile, return): 6 lines
+  gemini-2.5-flash-preview-tts: 47.2s audio (request 2/9)
+  new take: 47.2s, 33.9s spoken, 13.3 letters/s
+  cut by speech recognition (text match 84%)
+  line  7:  7.40s spoken (expected ~ 6.2s), pause after 0.86s  आठ साल… जंगलों में छिपकर, सेना जोड़ते हु
+  line  8:  4.58s spoken (expected ~ 4.3s), pause after 0.86s  और उनकी सबसे भरोसेमंद साथी थी कुयिली… और
+  line  9:  6.12s spoken (expected ~ 6.6s), pause after 0.88s  1780 में रानी लौटीं। पर क़िले के अंदर अं
+  line 10:  5.26s spoken (expected ~ 5.7s), pause after 0.86s  फिर कुयिली को एक बात पता चली — विजयादशमी
+  line 11:  2.92s spoken (expected ~ 3.5s), pause after 0.86s  पूजा की टोकरियों में छिपे हथियार… और औरत
+  line 12:  7.58s spoken (expected ~ 7.7s), pause after 0.00s  और यहीं वो पल आया, जिससे कहानी शुरू हुई 
+    line  7 final 9.40s
+    line  8 final 5.58s
+    line  9 final 7.93s
+    line 10 final 6.48s
+    line 11 final 3.74s
+    line 12 final 9.34s
+Part 3/3 (blast, legacy, end): 5 lines
+  gemini-2.5-flash-preview-tts: 26.4s audio (request 3/9)
+  new take: 26.4s, 19.5s spoken, 13.0 letters/s
+  cut by speech recognition (text match 88%)
+  line 13:  4.47s spoken (expected ~ 4.2s), pause after 0.65s  धमाका इतना बड़ा था कि अंग्रेज़ों का सारा
+  line 14:  3.91s spoken (expected ~ 3.4s), pause after 0.62s  रानी की सेना टूट पड़ी… और आठ साल बाद, शि
+  line 15:  3.44s spoken (expected ~ 3.3s), pause after 0.60s  तमिलनाडु में आज भी रानी को कहते हैं — वी
+  line 16:  4.08s spoken (expected ~ 4.2s), pause after 0.45s  और सोचिए… ये सब हुआ था 1857 से पूरे 77 स
+  line 17:  3.60s spoken (expected ~ 4.5s), pause after 0.00s  कुयिली का नाम किताबों में कम मिलता है… आ
+    line 13 final 5.37s
+    line 14 final 4.89s
+    line 15 final 4.10s
+    line 16 final 5.13s
+    line 17 final 4.58s
+Voice done: 18 lines, 115.1s of speech, 3 new requests
