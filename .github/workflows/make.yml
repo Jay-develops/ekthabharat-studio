@@ -1,0 +1,87 @@
+name: Ek Tha Bharat - make a video
+
+# Voice (Gemini) -> render -> music -> cover. The finished video and its cover are published on the Releases page
+# (one release per video, e.g. tag v09). Nothing is posted from here: videos are scheduled in Meta Business Suite
+# and YouTube Studio.
+on:
+  workflow_dispatch:
+    inputs:
+      video:
+        description: "Video folder in history/videos, e.g. v09 (several: v09 v10 v11)"
+        default: "v09"
+      voice:
+        description: "Gemini voice name (Charon, Fenrir, Orus, Algenib...)"
+        default: ""
+
+permissions:
+  contents: write   # releases with the finished files; keeps the voice takes (so a re-run spends no voice quota) and the review sheets
+
+concurrency:
+  group: etb-make
+  cancel-in-progress: false
+
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    timeout-minutes: 300
+    env:
+      VIDEOS: ${{ inputs.video || 'v09' }}
+      VOICE_OVERRIDE: ${{ inputs.voice }}
+      UPLOAD: "0"
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GH_TOKEN: ${{ github.token }}
+      WORKERS: "4"
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Tools
+        timeout-minutes: 30
+        run: |
+          timeout 120 sudo apt-get update -qq || echo "package index update was slow - skipped"
+          for i in 1 2 3; do which ffmpeg >/dev/null && break; timeout 420 sudo apt-get install -y -qq --no-install-recommends -o Acquire::Retries=3 ffmpeg || { sleep 20; timeout 120 sudo apt-get update -qq || true; }; done
+          for i in 1 2 3; do fc-list | grep -qi FreeSans && break; timeout 300 sudo apt-get install -y -qq --no-install-recommends -o Acquire::Retries=3 fonts-freefont-ttf || sleep 20; done
+          which ffmpeg && fc-list | grep -qi FreeSans
+          pip install -q requests numpy pillow playwright faster-whisper
+          google-chrome --version
+
+      - name: Make the videos
+        run: |
+          set +e
+          failed=""
+          for v in $VIDEOS; do
+            echo "::group::$v"
+            rm -rf history/out
+            export VIDEO=$v
+            python history/tts.py && python history/build.py && python history/cover.py $v
+            rc=$?
+            mkdir -p history/review/$v
+            cp history/out/voice_report.txt history/review/$v/ 2>/dev/null
+            for f in history/review/*.*; do [ -f "$f" ] && cp "$f" history/review/$v/; done
+            echo "::endgroup::"
+            if [ $rc -ne 0 ]; then failed="$failed $v"; continue; fi
+            mkdir -p final
+            mp4=$(ls history/out/final/*.mp4 | head -1); stem=$(basename "$mp4" .mp4)
+            cp "$mp4" final/
+            cp history/out/covers/$v.jpg "final/$stem.jpg" 2>/dev/null
+            gh release delete $v -y --cleanup-tag 2>/dev/null
+            gh release create $v "$mp4" "final/$stem.jpg" --title "$stem" --notes "Video and cover for $stem" || failed="$failed $v(release)"
+          done
+          git config user.name "etb-bot"
+          git config user.email "etb-bot@users.noreply.github.com"
+          git add history/voice_cache history/review 2>/dev/null
+          git diff --cached --quiet || git commit -q -m "Voice takes and review sheets: $VIDEOS"
+          for i in 1 2 3; do git pull -q --rebase --autostash && git push -q && break; sleep 7; done
+          if [ -n "$failed" ]; then echo "FAILED:$failed"; exit 1; fi
+
+      - name: Keep the videos as a download too
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: videos
+          path: final/
+          retention-days: 7
+          if-no-files-found: ignore
