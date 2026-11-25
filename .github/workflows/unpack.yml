@@ -1,0 +1,30 @@
+name: Unpack bundle
+
+# One-off: bundle.json holds the source files as {path: text}; this writes them out and removes the bundle.
+on:
+  push:
+    paths: ["bundle.json"]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  unpack:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: |
+          python - <<'EOF'
+          import json, pathlib
+          b = json.loads(pathlib.Path("bundle.json").read_text(encoding="utf-8"))
+          for p, t in b.items():
+              f = pathlib.Path(p); f.parent.mkdir(parents=True, exist_ok=True); f.write_text(t, encoding="utf-8")
+          print(len(b), "files")
+          EOF
+          git rm -q bundle.json
+          git config user.name "etb-bot"
+          git config user.email "etb-bot@users.noreply.github.com"
+          git add -A
+          git commit -q -m "Unpack source files"
+          git push -q
