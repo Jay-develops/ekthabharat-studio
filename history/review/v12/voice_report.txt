@@ -1,0 +1,36 @@
+Part 1/3 (hook_house, title, arrest, car): 7 lines
+  gemini-2.5-flash-preview-tts: 64.5s audio (request 1/9)
+  new take: 64.5s, 38.6s spoken, 12.6 letters/s
+  speech recognition did not line up (text match 69%) - using pause matching
+  cut by pause matching
+  line  0:  5.81s spoken (expected ~ 5.5s), pause after 1.50s  घर के बाहर अंग्रेज़ जासूसों का पहरा… और 
+  line  1:  5.61s spoken (expected ~ 5.5s), pause after 1.38s  जासूसों ने उसे देखा… और जाने दिया। उन्हे
+  line  2:  5.46s spoken (expected ~ 4.7s), pause after 1.37s  वो पठान थे… नेताजी सुभाष चंद्र बोस। और य
+  line  3:  5.20s spoken (expected ~ 5.3s), pause after 1.41s  अंग्रेज़ों ने उन्हें घर में नज़रबंद कर र
+  line  4:  6.30s spoken (expected ~ 6.6s), pause after 1.40s  तो नेताजी ने ऐलान किया — अब मैं किसी से 
+  line  5:  5.89s spoken (expected ~ 6.4s), pause after 1.32s  फिर आई वो रात। भतीजा शिशिर स्टीयरिंग पर…
+  line  6:  4.35s spoken (expected ~ 4.7s), pause after 0.00s  अब वो थे मोहम्मद ज़ियाउद्दीन, एक बीमा एज
+    line  0 final 8.26s
+    line  1 final 7.46s
+    line  2 final 6.96s
+    line  3 final 6.53s
+    line  4 final 8.92s
+    line  5 final 8.06s
+    line  6 final 6.34s
+Part 2/3 (pass, berlin): 5 lines
+  gemini-2.5-flash-preview-tts: 41.3s audio (request 2/9)
+  new take: 41.3s, 25.4s spoken, 12.5 letters/s
+  cut by speech recognition (text match 86%)
+  line  7:  6.93s spoken (expected ~ 6.8s), pause after 1.91s  आगे का रास्ता पहाड़ों से, पैदल। और यहाँ 
+  line  8:  5.73s spoken (expected ~ 5.2s), pause after 1.89s  बर्फ़ीले दर्रे, क़बीलों का इलाक़ा… एक ग़
+  line  9:  4.04s spoken (expected ~ 4.5s), pause after 1.72s  और कोलकाता में? दस दिन तक अंग्रेज़ों को 
+  line 10:  4.39s spoken (expected ~ 4.9s), pause after 2.03s  काबुल से नया पासपोर्ट, नया नाम — ओरलांडो
+  line 11:  4.28s spoken (expected ~ 3.9s), pause after 0.00s  फिर एक पनडुब्बी में आधी दुनिया का समंदर 
+    line  7 final 9.52s
+    line  8 final 8.06s
+    line  9 final 4.84s
+    line 10 final 5.98s
+    line 11 final 5.09s
+Part 3/3 (ina, twist, end): 5 lines
+  gemini-2.5-flash-preview-tts: 429 { "error": { "code": 429, "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
+FAILED: daily voice quota of gemini-2.5-flash-preview-tts is used up - run again after it resets (1:30 PM IST)
