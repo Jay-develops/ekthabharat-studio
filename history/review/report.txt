@@ -1,63 +1,105 @@
-Part 1/3 (hook_cliff, title, wedding, fort): 8 lines
-  gemini-2.5-flash-preview-tts: 59.4s audio (request 1/9)
-  new take: 59.4s, 35.5s spoken, 12.9 letters/s
-  speech recognition did not line up (text match 77%) - using pause matching
-  cut by pause matching
-  line  0:  5.70s spoken (expected ~ 5.5s), pause after 1.58s  आधी रात। सीधी खड़ी चट्टान, और रस्सी के स
-  line  1:  4.47s spoken (expected ~ 4.4s), pause after 1.56s  ऊपर क़िले में मुग़लों की फ़ौज सो रही थी।
-  line  2:  2.91s spoken (expected ~ 2.9s), pause after 1.60s  और उनका सरदार, अपने बेटे की शादी छोड़कर 
-  line  3:  3.65s spoken (expected ~ 3.5s), pause after 1.54s  तानाजी मालुसरे! और वो रात, जिसने एक क़िल
-  line  4:  5.79s spoken (expected ~ 5.1s), pause after 1.48s  घर में बेटे की शादी की तैयारी थी — ढोल, 
-  line  5:  4.09s spoken (expected ~ 4.5s), pause after 1.51s  कोंढाणा वापस चाहिए। तानाजी बोले — पहले क
-  line  6:  4.01s spoken (expected ~ 4.5s), pause after 1.34s  कोंढाणा, पुणे के पास पहाड़ की चोटी पर क़
-  line  7:  4.86s spoken (expected ~ 5.1s), pause after 0.00s  सामने से हमला नामुमकिन। तो तानाजी ने चुन
-    line  0 final 7.95s
-    line  1 final 5.46s
-    line  2 final 3.47s
-    line  3 final 4.65s
-    line  4 final 6.65s
-    line  5 final 5.22s
-    line  6 final 5.11s
-    line  7 final 6.10s
-Part 2/3 (climb, fight, rally): 6 lines
-  gemini-2.5-flash-preview-tts: 40.1s audio (request 2/9)
-  new take: 40.1s, 26.2s spoken, 14.1 letters/s
-  cut by speech recognition (text match 80%)
-  line  8:  6.74s spoken (expected ~ 6.3s), pause after 1.48s  कहते हैं, एक घोरपड़ की कमर में रस्सी बाँ
-  line  9:  4.36s spoken (expected ~ 3.6s), pause after 1.30s  फिर अँधेरे में गर्जना गूँजी — हर हर महाद
-  line 10:  4.81s spoken (expected ~ 4.8s), pause after 1.24s  तानाजी और उदयभान आमने-सामने। ढाल टूट गई,
-  line 11:  2.32s spoken (expected ~ 2.6s), pause after 1.30s  आख़िरी वार… और दोनों योद्धा ज़मीन पर गिर
-  line 12:  4.13s spoken (expected ~ 4.8s), pause after 1.38s  सरदार गिरा, मावले पीछे भागने लगे। तभी ता
-  line 13:  3.86s spoken (expected ~ 4.1s), pause after 0.00s  अब लौटने का रास्ता नहीं था। या तो जीतो, 
-    line  8 final 8.85s
-    line  9 final 5.26s
-    line 10 final 5.76s
-    line 11 final 2.75s
-    line 12 final 4.85s
-    line 13 final 4.78s
-Part 3/3 (twist, end): 4 lines
-  gemini-2.5-flash-preview-tts: 28.7s audio (request 3/9)
-  new take: 28.7s, 19.3s spoken, 11.2 letters/s
-  cut by speech recognition (text match 86%)
-  line 14:  3.61s spoken (expected ~ 3.2s), pause after 0.87s  जीत की ख़बर आई, पर साथ में तानाजी के जान
-  line 15:  6.13s spoken (expected ~ 5.9s), pause after 0.91s  कहते हैं, शिवाजी महाराज बोले — गड आला, प
-  line 16:  3.08s spoken (expected ~ 3.0s), pause after 0.93s  और उसी दिन से कोंढाणा का नाम पड़ा — सिंह
-  line 17:  6.50s spoken (expected ~ 7.2s), pause after 0.00s  ऐसे शेर के लिए कमेंट में एक बार लिखिए — 
-    line 14 final 4.48s
-    line 15 final 7.98s
-    line 16 final 3.84s
-    line 17 final 8.23s
-Voice done: 18 lines, 101.4s of speech, 3 new requests
+Voice: ai4bharat/indic-parler-tts, speaker Aman
+Loaded ai4bharat/indic-parler-tts in 24s (sample rate 44100)
+  line  0:  7.10s  recorded in 102s (7.9s, 5.3s spoken, 14.4 letters/s)  सन 1556। पानीपत का मैदान। एक हाथी पर सवा
+  line  1:  4.54s  recorded in 47s (5.0s, 3.8s spoken, 12.2 letters/s)  तभी एक तीर आया… और भारत का इतिहास डेढ़ स
+  line  2:  6.74s  recorded in 69s (7.3s, 5.7s spoken, 12.2 letters/s)  पर ये कहानी हार की नहीं है। ये कहानी है 
+  line  3:  6.66s  recorded in 67s (7.1s, 5.5s spoken, 12.5 letters/s)  बाबर से लेकर औरंगज़ेब तक, हर बादशाह के स
+  line  4:  4.68s  recorded in 48s (5.1s, 3.7s spoken, 12.9 letters/s)  और आख़िर तक देखिए, क्योंकि अंत में मैं आ
+  line  5:  9.18s  recorded in 94s (9.8s, 7.4s spoken, 13.1 letters/s)  1526। मध्य एशिया से एक सरदार आया, बाबर। 
+  line  6:  8.68s  recorded in 89s (9.3s, 7.4s spoken, 12.7 letters/s)  बाबर तैमूर और चंगेज़ ख़ान का वंशज था। का
+  line  7:  8.86s  recorded in 89s (9.3s, 7.2s spoken, 14.3 letters/s)  पानीपत में दिल्ली के सुल्तान इब्राहिम लो
+  line  8:  4.22s  recorded in 44s (4.7s, 3.7s spoken, 13.5 letters/s)  दिल्ली और आगरा बाबर के हाथ में आ गए। यही
+  line  9:  7.37s  recorded in 76s (7.9s, 6.1s spoken, 12.4 letters/s)  पर बाबर जानता था, असली चुनौती अभी बाक़ी 
+  line 10: 10.02s  recorded in 108s (11.1s, 7.9s spoken, 13.6 letters/s)  मेवाड़ के राणा सांगा। लड़ाइयों में एक आँ
+  line 11:  7.83s  recorded in 81s (8.4s, 6.5s spoken, 13.3 letters/s)  उन्होंने राजपूत राजाओं को एक झंडे के नीच
+  line 12:  9.53s  recorded in 96s (9.9s, 8.2s spoken, 14.2 letters/s)  इससे पहले सांगा दिल्ली, गुजरात और मालवा 
+  line 13:  9.01s  recorded in 91s (9.4s, 8.0s spoken, 13.1 letters/s)  1527, खानवा। इतनी विशाल फ़ौज देखकर बाबर 
+  line 14:  8.19s  recorded in 83s (8.7s, 6.8s spoken, 12.7 letters/s)  लड़ाई भयंकर थी। पर तोपों और बंदूकों के स
+  line 15:  5.33s  recorded in 55s (5.8s, 4.4s spoken, 14.5 letters/s)  कहते हैं, होश आया तो उन्होंने क़सम खाई: 
+  line 16:  5.63s  recorded in 57s (6.0s, 4.9s spoken, 13.7 letters/s)  वो क़सम अधूरी रह गई। पर राणा सांगा ने दि
+  line 17:  5.31s  recorded in 56s (5.9s, 4.3s spoken, 11.4 letters/s)  अब मिलिए एक ऐसे योद्धा से, जिसे इतिहास न
+  line 18:  5.25s  recorded in 55s (5.7s, 4.5s spoken, 13.8 letters/s)  एक साधारण परिवार में जन्म। कहते हैं, कभी
+  line 19:  7.55s  recorded in 77s (8.0s, 6.5s spoken, 13.8 letters/s)  पर अपनी क़ाबिलियत से वो सूर साम्राज्य के
+  line 20:  7.20s  recorded in 80s (8.3s, 5.7s spoken, 14.3 letters/s)  1556 में बादशाह हुमायूँ की मौत हुई। हेमू
+  line 21:  9.57s  recorded in 99s (10.3s, 7.4s spoken, 14.9 letters/s)  7 अक्टूबर 1556, दिल्ली का पुराना क़िला। 
+  line 22:  6.27s  recorded in 65s (6.8s, 5.1s spoken, 13.1 letters/s)  अकबर उस वक़्त सिर्फ़ तेरह साल का था। मुग
+  line 23:  6.20s  recorded in 66s (6.9s, 4.9s spoken, 14.0 letters/s)  एक महीने बाद, फिर पानीपत। हेमू अपने हाथी
+  line 24:  5.66s  recorded in 62s (6.5s, 4.6s spoken, 12.9 letters/s)  तभी एक तीर आया… सीधा आँख में। सेनापति गि
+  line 25:  4.27s  recorded in 47s (5.0s, 3.3s spoken, 12.8 letters/s)  सोचिए… अगर वो एक तीर चूक जाता, तो आज का 
+  line 26:  7.29s  recorded in 80s (8.4s, 6.0s spoken, 12.9 letters/s)  अकबर का साम्राज्य फैल रहा था, और उसकी फ़
+  line 27: 10.04s  recorded in 103s (10.7s, 8.4s spoken, 13.7 letters/s)  1524 में कालिंजर के चंदेल राजघराने में ज
+  line 28:  6.74s  recorded in 69s (7.2s, 5.9s spoken, 13.7 letters/s)  पति के जाने के बाद, सोलह साल उन्होंने गढ
+  line 29:  7.54s  recorded in 76s (8.0s, 6.4s spoken, 14.3 letters/s)  1564 में मुग़ल सेनापति आसफ़ ख़ान बड़ी फ़
+  line 30:  7.50s  recorded in 80s (8.2s, 6.2s spoken, 13.1 letters/s)  दो तीर लगे, फिर भी वो डटी रहीं। और जब हा
+  line 31:  6.97s  recorded in 72s (7.5s, 6.1s spoken, 12.5 letters/s)  जबलपुर के पास आज भी उनकी समाधि है। वहाँ 
+  line 32:  5.80s  recorded in 60s (6.3s, 5.0s spoken, 13.7 letters/s)  और जबलपुर का विश्वविद्यालय आज भी उन्हीं 
+  line 33:  4.84s  recorded in 52s (5.5s, 3.9s spoken, 13.4 letters/s)  और अब, वो नाम… जिसे सुनते ही सीना चौड़ा 
+  line 34:  9.18s  recorded in 102s (10.6s, 6.8s spoken, 12.0 letters/s)  अकबर ने कई बार दूत भेजे। सोना, जागीर, सम
+  line 35:  7.11s  recorded in 79s (8.3s, 6.0s spoken, 13.4 letters/s)  18 जून 1576, हल्दीघाटी। मुग़ल फ़ौज की कम
+  line 36:  6.67s  recorded in 67s (7.1s, 5.8s spoken, 13.2 letters/s)  और प्रताप की तरफ़? भील योद्धा… और अफ़ग़ा
+  line 37:  8.79s  recorded in 92s (9.5s, 7.4s spoken, 14.2 letters/s)  कहते हैं, प्रताप ने सीधे मान सिंह के हाथ
+  line 38:  7.86s  recorded in 84s (8.7s, 5.8s spoken, 13.5 letters/s)  कहते हैं, घायल प्रताप को उनका घोड़ा चेतक
+  line 39:  6.73s  recorded in 69s (7.2s, 5.3s spoken, 14.6 letters/s)  मुग़लों ने मैदान तो जीता, पर प्रताप को क
+  line 40:  8.47s  recorded in 86s (8.9s, 6.5s spoken, 13.5 letters/s)  कहते हैं, उन्होंने क़सम खाई थी: जब तक चि
+  line 41:  9.33s  recorded in 94s (9.8s, 7.7s spoken, 13.8 letters/s)  1582, दिवेर। प्रताप और उनके बेटे अमर सिं
+  line 42:  9.01s  recorded in 92s (9.4s, 7.1s spoken, 13.8 letters/s)  1597 में जब प्रताप ने आख़िरी साँस ली, तब
+  line 43:  3.31s  recorded in 34s (3.7s, 2.6s spoken, 14.3 letters/s)  प्रताप के लिए, कमेंट में एक बार लिखिए… ज
+  line 44:  6.95s  recorded in 73s (7.5s, 5.5s spoken, 13.9 letters/s)  अब अकबर की नज़र दक्कन पर थी। 1595 में उस
+  line 45:  2.44s  recorded in 29s (3.1s, 1.9s spoken, 14.9 letters/s)  क़िले की रक्षा कर रही थीं, चाँद बीबी।
+  line 46:  5.61s  recorded in 58s (6.0s, 4.7s spoken, 13.3 letters/s)  वो पहले बीजापुर की संरक्षक रानी रह चुकी 
+  line 47:  7.96s  recorded in 87s (9.0s, 6.8s spoken, 14.0 letters/s)  फ़रवरी 1596। मुग़लों ने सुरंग में बारूद 
+  line 48:  8.08s  recorded in 82s (8.5s, 6.6s spoken, 13.1 letters/s)  पर चाँद बीबी कवच पहनकर, तलवार लेकर, ख़ुद
+  line 49:  4.84s  recorded in 50s (5.3s, 4.0s spoken, 13.4 letters/s)  शहज़ादे को संधि करनी पड़ी। एक रानी ने अक
+  line 50:  4.61s  recorded in 48s (5.2s, 4.0s spoken, 13.9 letters/s)  फिर आया वो नाम, जिसने मुग़लों की नींद उड
+  line 51:  4.20s  recorded in 45s (4.7s, 3.2s spoken, 14.8 letters/s)  उनका सपना था, हिंदवी स्वराज्य। अपना राज,
+  line 52:  5.94s  recorded in 61s (6.4s, 4.7s spoken, 14.0 letters/s)  सह्याद्रि के पहाड़, छोटी तेज़ टुकड़ियाँ,
+  line 53: 12.86s  recorded in 141s (14.1s, 11.1s spoken, 13.9 letters/s)  1663। मुग़ल सूबेदार शाइस्ता ख़ान पुणे के
+  line 54:  8.58s  recorded in 88s (9.1s, 7.5s spoken, 14.0 letters/s)  1666 में औरंगज़ेब ने उन्हें आगरा में नज़
+  line 55:  7.91s  recorded in 80s (8.3s, 6.7s spoken, 14.4 letters/s)  1670 में उनके सेनापति तानाजी मालुसरे ने 
+  line 56:  6.50s  recorded in 69s (7.2s, 5.2s spoken, 14.0 letters/s)  और 6 जून 1674, रायगढ़। शिवाजी महाराज का 
+  line 57:  6.43s  recorded in 65s (6.9s, 5.6s spoken, 13.6 letters/s)  किसान-योद्धाओं की एक फ़ौज ने, दुनिया के 
+  line 58:  5.92s  recorded in 64s (6.8s, 4.4s spoken, 12.2 letters/s)  उधर पूरब में, असम। 1671, ब्रह्मपुत्र नदी
+  line 59:  7.10s  recorded in 72s (7.5s, 6.2s spoken, 12.8 letters/s)  मुग़लों की बड़ी नौसेना आगे बढ़ रही थी… औ
+  line 60:  7.78s  recorded in 79s (8.3s, 6.4s spoken, 14.6 letters/s)  कहते हैं, क़िलेबंदी में लापरवाही करने पर
+  line 61:  7.95s  recorded in 81s (8.5s, 6.1s spoken, 13.3 letters/s)  सैनिक पीछे हटने लगे। तब लाचित उठे, नाव प
+  line 62:  5.31s  recorded in 53s (5.8s, 4.8s spoken, 13.7 letters/s)  छोटी अहोम नावों ने बड़ी मुग़ल नावों को घ
+  line 63:  5.89s  recorded in 60s (6.3s, 5.2s spoken, 13.2 letters/s)  आज भी नेशनल डिफ़ेंस एकेडमी के सबसे अच्छे
+  line 64: 11.51s  recorded in 117s (12.0s, 9.7s spoken, 14.3 letters/s)  गुरु गोबिंद सिंह जी के पिता, गुरु तेग बह
+  line 65:  9.70s  recorded in 104s (10.8s, 8.2s spoken, 14.1 letters/s)  पंजाब में, सिख गुरुओं ने अन्याय के ख़िला
+  line 66:  9.92s  recorded in 105s (10.8s, 8.3s spoken, 13.0 letters/s)  चमकौर में मुट्ठी भर सिखों ने एक विशाल फ़
+  line 67: 11.49s  recorded in 122s (12.4s, 9.3s spoken, 13.9 letters/s)  और छोटे साहिबज़ादे, ज़ोरावर सिंह और फ़ते
+  line 68:  6.91s  recorded in 74s (7.7s, 5.6s spoken, 14.4 letters/s)  सब कुछ खोकर भी गुरु जी झुके नहीं। उन्हों
+  line 69:  6.88s  recorded in 72s (7.3s, 5.5s spoken, 13.7 letters/s)  अब औरंगज़ेब ख़ुद अपनी पूरी ताक़त लेकर दक
+  line 70:  8.83s  recorded in 97s (9.6s, 7.4s spoken, 13.1 letters/s)  1689 में औरंगज़ेब ने छत्रपति संभाजी महार
+  line 71:  5.40s  recorded in 59s (5.9s, 4.3s spoken, 15.5 letters/s)  1700 में छत्रपति राजाराम की मौत हो गई। म
+  line 72:  4.01s  recorded in 44s (4.4s, 3.1s spoken, 14.3 letters/s)  पर तभी सामने आईं, पच्चीस साल की एक रानी…
+  line 73:  8.78s  recorded in 94s (9.3s, 7.3s spoken, 14.6 letters/s)  वो ख़ुद घोड़े पर सवार होकर एक क़िले से द
+  line 74:  6.73s  recorded in 71s (7.2s, 6.0s spoken, 14.1 letters/s)  इतिहासकार जदुनाथ सरकार ने लिखा: उन सालों
+  line 75:  7.16s  recorded in 76s (7.6s, 6.5s spoken, 11.8 letters/s)  उधर मारवाड़ में वीर दुर्गादास राठौड़, और
+  line 76:  6.71s  recorded in 74s (7.4s, 5.1s spoken, 14.5 letters/s)  और मार्च 1707 में, दक्कन में ही औरंगज़ेब
+  line 77:  7.62s  recorded in 83s (8.2s, 6.2s spoken, 14.1 letters/s)  और फिर, वो दिन आया। 1737। पेशवा बाजीराव 
+  line 78:  4.29s  recorded in 48s (4.7s, 3.8s spoken, 13.4 letters/s)  कहा जाता है, बाजीराव ने अपने जीवन में एक
+  line 79:  4.68s  recorded in 51s (5.1s, 4.2s spoken, 13.8 letters/s)  मुग़ल फ़ौजें पीछे छूट गईं… और मराठे सीधे
+  line 80:  6.85s  recorded in 72s (7.3s, 5.9s spoken, 14.1 letters/s)  जिस साम्राज्य की शुरुआत पानीपत की तोपों 
+  line 81:  6.24s  recorded in 66s (6.6s, 5.2s spoken, 13.5 letters/s)  दो सौ साल। राणा सांगा के घावों से लेकर त
+  line 82:  4.23s  recorded in 46s (4.7s, 3.5s spoken, 12.1 letters/s)  यही है भारत की असली कहानी। हार की नहीं… 
+  line 83:  5.51s  recorded in 63s (6.3s, 4.8s spoken, 13.0 letters/s)  अब आप बताइए: इन दस में से आपका सबसे बड़ा
+  line 84:  9.42s  recorded in 106s (10.3s, 7.6s spoken, 13.9 letters/s)  और ये वीडियो उस दोस्त को भेजिए, जिसे लगत
+Voice done: 85 lines, 599.8s of speech
 
-Length 107.2s (pauses x1.0, voice speed x1.000)
-  hook_cliff   17.43s  0.00-7.95  8.10-13.56  13.71-17.18
-  title         5.40s  0.15-4.80
-  wedding      12.42s  0.15-6.80  6.95-12.17
-  fort         11.71s  0.15-5.26  5.41-11.51
-  climb         9.20s  0.15-9.00
-  fight        14.52s  0.15-5.41  5.56-11.32  11.47-14.22
-  rally        10.23s  0.15-5.00  5.15-9.93
-  twist        17.30s  0.15-4.63  4.83-12.81  13.11-16.95
-  end           8.98s  0.15-8.38
-Rendered 9 scenes in 78s
-Final: 13 - Tanaji Malusare - Sinhagad.mp4 107.2s (timeline 107.2s) 51.1 MB
+Length 670.7s (pauses x1.0, voice speed x1.000)
+  open         32.42s  0.30-7.40  7.60-12.14  12.54-19.28  19.58-26.24  26.54-31.22
+  babur        43.41s  3.00-12.18  12.38-21.06  21.26-30.12  30.32-34.54  34.84-42.21
+  sanga        61.34s  3.00-13.02  13.32-21.15  21.35-30.88  31.08-40.09  40.29-48.48  48.78-54.11  54.41-60.04
+  hemu         63.48s  3.00-8.31  8.51-13.76  13.96-21.51  21.71-28.91  29.11-38.68  39.08-45.35  45.55-51.75  51.95-57.61  57.91-62.18
+  durgavati    57.48s  3.00-10.29  10.49-20.53  20.73-27.47  27.67-35.21  35.41-42.91  43.21-50.18  50.38-56.18
+  pratap       88.30s  3.00-7.84  8.14-17.32  17.62-24.73  24.93-31.60  31.90-40.69  40.99-48.85  49.15-55.88  56.08-64.55  64.75-74.08  74.38-83.39  83.69-87.00
+  chandbibi    41.18s  3.00-9.95  10.15-12.59  12.79-18.40  18.60-26.56  26.76-34.84  35.04-39.88
+  shivaji      63.23s  3.00-7.61  7.91-12.11  12.31-18.25  18.45-31.31  31.61-40.19  40.49-48.40  48.60-55.10  55.50-61.93
+  lachit       45.35s  3.00-8.92  9.12-16.22  16.42-24.20  24.40-32.35  32.65-37.96  38.16-44.05
+  guru         55.03s  3.00-14.51  14.81-24.51  24.71-34.63  34.93-46.42  46.82-53.73
+  tarabai      60.40s  3.00-9.88  10.08-18.91  19.21-24.61  24.81-28.82  29.12-37.90  38.10-44.83  45.03-52.19  52.39-59.10
+  delhi        39.71s  3.00-10.62  10.82-15.11  15.31-19.99  20.29-27.14  27.54-33.78  34.08-38.31
+  end          19.33s  0.30-5.81  6.11-15.53
+Rendered 13 scenes in 825s
+Final: D01 - Do Sau Saal Jo Jhuke Nahin - Mughal vs Bharat ke Veer.mp4 670.6s (timeline 670.7s) 246.5 MB
