@@ -77,7 +77,7 @@ def indicf5():
     readme = urllib.request.urlopen(base + "README.md").read().decode()
     ref_text = re.search(r'ref_text\s*=\s*"([^"]+)"', readme).group(1)
     urllib.request.urlretrieve(base + "prompts/PAN_F_HAPPY_00001.wav", "ref.wav")
-    model = AutoModel.from_pretrained("ai4bharat/IndicF5", trust_remote_code=True)
+    model = AutoModel.from_pretrained("ai4bharat/IndicF5", trust_remote_code=True, low_cpu_mem_usage=False)
     clips = []
     for text, _ in LINES:
         t0 = time.time()
