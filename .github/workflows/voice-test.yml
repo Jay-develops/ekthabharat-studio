@@ -1,0 +1,59 @@
+name: Free voice test
+
+# Makes the same 4 Hindi lines in several free open-source voices and puts the mp3s on the "voice-test" release.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  voice:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix:
+        engine: [parler, kokoro, indicf5]
+    env:
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      HUGGING_FACE_HUB_TOKEN: ${{ secrets.HF_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Tools
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg espeak-ng > /dev/null
+          pip install -q torch torchaudio --index-url https://download.pytorch.org/whl/cpu
+          pip install -q soundfile numpy
+          case "${{ matrix.engine }}" in
+            parler)  pip install -q git+https://github.com/huggingface/parler-tts.git ;;
+            kokoro)  pip install -q "kokoro>=0.9.4" ;;
+            indicf5) pip install -q git+https://github.com/ai4bharat/IndicF5.git ;;
+          esac
+      - name: Voice
+        run: python history/voice_test.py ${{ matrix.engine }}
+      - uses: actions/upload-artifact@v4
+        with:
+          name: voice-${{ matrix.engine }}
+          path: out/samples/*.mp3
+
+  publish:
+    needs: voice
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          path: samples
+          merge-multiple: true
+      - name: Release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ls -la samples
+          gh release delete voice-test -y --cleanup-tag -R "$GITHUB_REPOSITORY" || true
+          gh release create voice-test samples/*.mp3 -R "$GITHUB_REPOSITORY" -t "Free voice test" \
+            -n "Same 4 lines in free open-source voices. Listen and pick one."
