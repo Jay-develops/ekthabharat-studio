@@ -1,59 +1,73 @@
-Part 1/3 (hook_sea, title, father, ganga): 8 lines
-  gemini-2.5-flash-preview-tts: 49.0s audio (request 1/9)
-  new take: 49.0s, 37.8s spoken, 12.5 letters/s
-  speech recognition did not line up (text match 69%) - using pause matching
-  cut by pause matching
-  line  0:  5.07s spoken (expected ~ 4.3s), pause after 0.50s  हज़ार साल पहले… एक भारतीय राजा ने अपनी प
-  line  1:  6.16s spoken (expected ~ 6.4s), pause after 0.44s  और समंदर पार, हज़ारों किलोमीटर दूर एक सा
-  line  2:  2.29s spoken (expected ~ 2.5s), pause after 0.43s  पर ये राजा था कौन… और उसने ऐसा क्यों किय
-  line  3:  5.62s spoken (expected ~ 5.0s), pause after 0.45s  राजेंद्र चोल… वो राजा, जिसकी नौसेना ने स
-  line  4:  5.75s spoken (expected ~ 6.3s), pause after 0.33s  उनके पिता राजराज चोल कोई मामूली राजा नही
-  line  5:  1.71s spoken (expected ~ 1.8s), pause after 0.28s  पर बेटा… पिता से भी आगे निकला।
-  line  6:  5.03s spoken (expected ~ 5.2s), pause after 0.43s  राजेंद्र की सेना उत्तर में गंगा तक गई… औ
-  line  7:  6.21s spoken (expected ~ 6.3s), pause after 0.00s  इसीलिए उन्हें कहा गया गंगैकोंड चोल… यानी
-    line  0 final 6.26s
-    line  1 final 7.77s
-    line  2 final 3.02s
-    line  3 final 6.64s
-    line  4 final 6.94s
-    line  5 final 2.27s
-    line  6 final 5.96s
-    line  7 final 7.51s
-Part 2/3 (srivijaya, attack): 4 lines
-  gemini-2.5-flash-preview-tts: 38.8s audio (request 2/9)
-  new take: 38.8s, 23.6s spoken, 13.6 letters/s
-  cut by speech recognition (text match 87%)
-  line  8:  7.86s spoken (expected ~ 8.1s), pause after 3.03s  पर असली चुनौती ज़मीन पर नहीं, समंदर में 
-  line  9:  5.31s spoken (expected ~ 5.2s), pause after 3.12s  तो राजेंद्र ने वो किया जो उस दौर में लगभ
-  line 10:  4.78s spoken (expected ~ 4.9s), pause after 2.84s  हफ़्तों का सफ़र… अनजान पानी… और फिर एक स
-  line 11:  5.68s spoken (expected ~ 5.5s), pause after 0.00s  हमला! एक के बाद एक बंदरगाह गिरते गए… कडा
-    line  8 final 9.85s
-    line  9 final 6.19s
-    line 10 final 6.10s
-    line 11 final 7.43s
-Part 3/3 (legacy, twist, end): 4 lines
-  gemini-2.5-flash-preview-tts: 25.8s audio (request 3/9)
-  new take: 25.8s, 18.0s spoken, 13.7 letters/s
-  cut by speech recognition (text match 92%)
-  line 12:  4.71s spoken (expected ~ 4.4s), pause after 0.70s  समंदर के रास्ते फिर खुल गए… और दक्षिण-पू
-  line 13:  5.14s spoken (expected ~ 5.1s), pause after 0.81s  और इसका सबूत? सुमात्रा में आज भी तमिल व्
-  line 14:  3.93s spoken (expected ~ 3.7s), pause after 0.94s  और गंगैकोंड चोलपुरम का वो मंदिर… आज यूने
-  line 15:  4.21s spoken (expected ~ 4.7s), pause after 0.00s  हज़ार साल पहले की ये नौसेना… क्या आपको स
-    line 12 final 6.30s
-    line 13 final 6.51s
-    line 14 final 4.75s
-    line 15 final 5.58s
-Voice done: 16 lines, 99.1s of speech, 3 new requests
+Part 1/3 (hook_house, title, arrest, car): 7 lines
+  gemini-2.5-flash-preview-tts: bad response 'content' {
+  "candidates": [
+    {
+      "finishReason": "OTHER",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 387,
+    "totalTokenCount": 387,
+    "promptTokensDetails": [
+      {
 
-Length 106.5s (pauses x1.0, voice speed x1.000)
-  hook_sea     17.95s  0.00-6.26  6.46-14.23  14.53-17.55
-  title         7.49s  0.15-6.79
-  father       10.01s  0.15-7.09  7.34-9.61
-  ganga        14.27s  0.15-6.11  6.36-13.87
-  srivijaya    16.89s  0.15-10.00  10.30-16.49
-  attack       14.38s  0.15-6.25  6.45-13.88
-  legacy        6.75s  0.15-6.45
-  twist        12.21s  0.15-6.66  6.96-11.71
-  end           6.53s  0.15-5.73
-Rendered 9 scenes in 131s
-Final: 11 - Rajendra Chola - Samudra Vijay.mp4 106.4s (timeline 106.5s) 45.9 MB
+  gemini-2.5-flash-preview-tts: 38.0s audio (request 2/9)
+  new take: 38.0s, 28.3s spoken, 14.1 letters/s
+  cut by speech recognition (text match 83%)
+  line  0:  5.65s spoken (expected ~ 5.2s), pause after 0.50s  1941, कोलकाता। घर के बाहर अंग्रेज़ जासूस
+  line  1:  3.55s spoken (expected ~ 3.3s), pause after 0.45s  जासूसों ने उसे देखा, और जाने दिया। ये उन
+  line  2:  2.72s spoken (expected ~ 2.4s), pause after 0.48s  क्योंकि वो पठान थे — नेताजी सुभाष चंद्र 
+  line  3:  3.53s spoken (expected ~ 4.1s), pause after 0.51s  अंग्रेज़ों ने उन्हें घर में नज़रबंद किया
+  line  4:  4.32s spoken (expected ~ 4.6s), pause after 0.29s  नेताजी ने ऐलान किया — अब मैं किसी से नही
+  line  5:  4.53s spoken (expected ~ 4.6s), pause after 0.42s  फिर एक रात भतीजा शिशिर गाड़ी लेकर आया, औ
+  line  6:  3.99s spoken (expected ~ 4.1s), pause after 0.00s  अब वो थे मोहम्मद ज़ियाउद्दीन, बीमा एजेंट
+    line  0 final 7.47s
+    line  1 final 4.39s
+    line  2 final 3.32s
+    line  3 final 4.03s
+    line  4 final 5.23s
+    line  5 final 5.18s
+    line  6 final 5.01s
+Part 2/3 (pass, berlin): 5 lines
+  gemini-2.5-flash-preview-tts: 35.0s audio (request 3/9)
+  new take: 35.0s, 18.4s spoken, 15.7 letters/s
+  cut by speech recognition (text match 84%)
+  line  7:  4.63s spoken (expected ~ 4.4s), pause after 1.43s  आगे पहाड़, पैदल। यहाँ उन्होंने गूँगे-बहर
+  line  8:  3.79s spoken (expected ~ 4.1s), pause after 1.27s  बर्फ़ीले दर्रे, क़बीलों का इलाक़ा। एक ग़
+  line  9:  3.41s spoken (expected ~ 3.6s), pause after 1.30s  और कोलकाता में? दस दिन तक अंग्रेज़ों को 
+  line 10:  3.20s spoken (expected ~ 3.3s), pause after 1.27s  काबुल से नया पासपोर्ट, नया नाम — ओरलांडो
+  line 11:  3.33s spoken (expected ~ 3.0s), pause after 0.00s  फिर पनडुब्बी में आधी दुनिया का समंदर पार
+    line  7 final 5.93s
+    line  8 final 5.45s
+    line  9 final 4.30s
+    line 10 final 4.64s
+    line 11 final 4.07s
+Part 3/3 (ina, twist, end): 5 lines
+  gemini-2.5-flash-preview-tts: 33.0s audio (request 4/9)
+  new take: 33.0s, 22.7s spoken, 13.1 letters/s
+  cut by speech recognition (text match 89%)
+  line 12:  4.68s spoken (expected ~ 4.2s), pause after 1.14s  वहाँ आज़ाद हिंद फ़ौज की कमान सँभाली, और 
+  line 13:  3.04s spoken (expected ~ 2.6s), pause after 1.05s  तुम मुझे ख़ून दो… मैं तुम्हें आज़ादी दूँ
+  line 14:  4.10s spoken (expected ~ 4.5s), pause after 1.54s  जिस गाड़ी में वो उस रात निकले थे, वो आज 
+  line 15:  3.93s spoken (expected ~ 3.6s), pause after 1.57s  और गोमो स्टेशन का नाम आज है — नेताजी सुभ
+  line 16:  6.94s spoken (expected ~ 7.8s), pause after 0.00s  पर सबसे बड़ा सवाल आज भी बाक़ी है — क्या 
+    line 12 final 5.56s
+    line 13 final 3.45s
+    line 14 final 4.90s
+    line 15 final 4.53s
+    line 16 final 8.39s
+Voice done: 17 lines, 85.9s of speech, 4 new requests
+
+Length 91.5s (pauses x1.0, voice speed x1.000)
+  hook_house   12.21s  0.00-7.47  7.62-12.01
+  title         4.07s  0.15-3.47
+  arrest        9.81s  0.15-4.18  4.33-9.56
+  car          10.69s  0.15-5.33  5.48-10.49
+  pass         16.48s  0.15-6.08  6.23-11.68  11.88-16.18
+  berlin        9.21s  0.15-4.79  4.94-9.01
+  ina           9.81s  0.15-5.71  5.86-9.31
+  twist        10.08s  0.15-5.05  5.25-9.78
+  end           9.14s  0.15-8.54
+Rendered 9 scenes in 90s
+Final: 12 - Netaji Subhas Chandra Bose - Great Escape.mp4 91.4s (timeline 91.5s) 77.0 MB

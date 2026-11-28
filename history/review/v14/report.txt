@@ -1,59 +1,63 @@
-Part 1/3 (hook_sea, title, father, ganga): 8 lines
-  gemini-2.5-flash-preview-tts: 49.0s audio (request 1/9)
-  new take: 49.0s, 37.8s spoken, 12.5 letters/s
-  speech recognition did not line up (text match 69%) - using pause matching
+Part 1/3 (hook_cliff, title, wedding, fort): 8 lines
+  gemini-2.5-flash-preview-tts: 59.4s audio (request 1/9)
+  new take: 59.4s, 35.5s spoken, 12.9 letters/s
+  speech recognition did not line up (text match 77%) - using pause matching
   cut by pause matching
-  line  0:  5.07s spoken (expected ~ 4.3s), pause after 0.50s  हज़ार साल पहले… एक भारतीय राजा ने अपनी प
-  line  1:  6.16s spoken (expected ~ 6.4s), pause after 0.44s  और समंदर पार, हज़ारों किलोमीटर दूर एक सा
-  line  2:  2.29s spoken (expected ~ 2.5s), pause after 0.43s  पर ये राजा था कौन… और उसने ऐसा क्यों किय
-  line  3:  5.62s spoken (expected ~ 5.0s), pause after 0.45s  राजेंद्र चोल… वो राजा, जिसकी नौसेना ने स
-  line  4:  5.75s spoken (expected ~ 6.3s), pause after 0.33s  उनके पिता राजराज चोल कोई मामूली राजा नही
-  line  5:  1.71s spoken (expected ~ 1.8s), pause after 0.28s  पर बेटा… पिता से भी आगे निकला।
-  line  6:  5.03s spoken (expected ~ 5.2s), pause after 0.43s  राजेंद्र की सेना उत्तर में गंगा तक गई… औ
-  line  7:  6.21s spoken (expected ~ 6.3s), pause after 0.00s  इसीलिए उन्हें कहा गया गंगैकोंड चोल… यानी
-    line  0 final 6.26s
-    line  1 final 7.77s
-    line  2 final 3.02s
-    line  3 final 6.64s
-    line  4 final 6.94s
-    line  5 final 2.27s
-    line  6 final 5.96s
-    line  7 final 7.51s
-Part 2/3 (srivijaya, attack): 4 lines
-  gemini-2.5-flash-preview-tts: 38.8s audio (request 2/9)
-  new take: 38.8s, 23.6s spoken, 13.6 letters/s
-  cut by speech recognition (text match 87%)
-  line  8:  7.86s spoken (expected ~ 8.1s), pause after 3.03s  पर असली चुनौती ज़मीन पर नहीं, समंदर में 
-  line  9:  5.31s spoken (expected ~ 5.2s), pause after 3.12s  तो राजेंद्र ने वो किया जो उस दौर में लगभ
-  line 10:  4.78s spoken (expected ~ 4.9s), pause after 2.84s  हफ़्तों का सफ़र… अनजान पानी… और फिर एक स
-  line 11:  5.68s spoken (expected ~ 5.5s), pause after 0.00s  हमला! एक के बाद एक बंदरगाह गिरते गए… कडा
-    line  8 final 9.85s
-    line  9 final 6.19s
-    line 10 final 6.10s
-    line 11 final 7.43s
-Part 3/3 (legacy, twist, end): 4 lines
-  gemini-2.5-flash-preview-tts: 25.8s audio (request 3/9)
-  new take: 25.8s, 18.0s spoken, 13.7 letters/s
-  cut by speech recognition (text match 92%)
-  line 12:  4.71s spoken (expected ~ 4.4s), pause after 0.70s  समंदर के रास्ते फिर खुल गए… और दक्षिण-पू
-  line 13:  5.14s spoken (expected ~ 5.1s), pause after 0.81s  और इसका सबूत? सुमात्रा में आज भी तमिल व्
-  line 14:  3.93s spoken (expected ~ 3.7s), pause after 0.94s  और गंगैकोंड चोलपुरम का वो मंदिर… आज यूने
-  line 15:  4.21s spoken (expected ~ 4.7s), pause after 0.00s  हज़ार साल पहले की ये नौसेना… क्या आपको स
-    line 12 final 6.30s
-    line 13 final 6.51s
-    line 14 final 4.75s
-    line 15 final 5.58s
-Voice done: 16 lines, 99.1s of speech, 3 new requests
+  line  0:  5.70s spoken (expected ~ 5.5s), pause after 1.58s  आधी रात। सीधी खड़ी चट्टान, और रस्सी के स
+  line  1:  4.47s spoken (expected ~ 4.4s), pause after 1.56s  ऊपर क़िले में मुग़लों की फ़ौज सो रही थी।
+  line  2:  2.91s spoken (expected ~ 2.9s), pause after 1.60s  और उनका सरदार, अपने बेटे की शादी छोड़कर 
+  line  3:  3.65s spoken (expected ~ 3.5s), pause after 1.54s  तानाजी मालुसरे! और वो रात, जिसने एक क़िल
+  line  4:  5.79s spoken (expected ~ 5.1s), pause after 1.48s  घर में बेटे की शादी की तैयारी थी — ढोल, 
+  line  5:  4.09s spoken (expected ~ 4.5s), pause after 1.51s  कोंढाणा वापस चाहिए। तानाजी बोले — पहले क
+  line  6:  4.01s spoken (expected ~ 4.5s), pause after 1.34s  कोंढाणा, पुणे के पास पहाड़ की चोटी पर क़
+  line  7:  4.86s spoken (expected ~ 5.1s), pause after 0.00s  सामने से हमला नामुमकिन। तो तानाजी ने चुन
+    line  0 final 7.95s
+    line  1 final 5.46s
+    line  2 final 3.47s
+    line  3 final 4.65s
+    line  4 final 6.65s
+    line  5 final 5.22s
+    line  6 final 5.11s
+    line  7 final 6.10s
+Part 2/3 (climb, fight, rally): 6 lines
+  gemini-2.5-flash-preview-tts: 40.1s audio (request 2/9)
+  new take: 40.1s, 26.2s spoken, 14.1 letters/s
+  cut by speech recognition (text match 80%)
+  line  8:  6.74s spoken (expected ~ 6.3s), pause after 1.48s  कहते हैं, एक घोरपड़ की कमर में रस्सी बाँ
+  line  9:  4.36s spoken (expected ~ 3.6s), pause after 1.30s  फिर अँधेरे में गर्जना गूँजी — हर हर महाद
+  line 10:  4.81s spoken (expected ~ 4.8s), pause after 1.24s  तानाजी और उदयभान आमने-सामने। ढाल टूट गई,
+  line 11:  2.32s spoken (expected ~ 2.6s), pause after 1.30s  आख़िरी वार… और दोनों योद्धा ज़मीन पर गिर
+  line 12:  4.13s spoken (expected ~ 4.8s), pause after 1.38s  सरदार गिरा, मावले पीछे भागने लगे। तभी ता
+  line 13:  3.86s spoken (expected ~ 4.1s), pause after 0.00s  अब लौटने का रास्ता नहीं था। या तो जीतो, 
+    line  8 final 8.85s
+    line  9 final 5.26s
+    line 10 final 5.76s
+    line 11 final 2.75s
+    line 12 final 4.85s
+    line 13 final 4.78s
+Part 3/3 (twist, end): 4 lines
+  gemini-2.5-flash-preview-tts: 28.7s audio (request 3/9)
+  new take: 28.7s, 19.3s spoken, 11.2 letters/s
+  cut by speech recognition (text match 86%)
+  line 14:  3.61s spoken (expected ~ 3.2s), pause after 0.87s  जीत की ख़बर आई, पर साथ में तानाजी के जान
+  line 15:  6.13s spoken (expected ~ 5.9s), pause after 0.91s  कहते हैं, शिवाजी महाराज बोले — गड आला, प
+  line 16:  3.08s spoken (expected ~ 3.0s), pause after 0.93s  और उसी दिन से कोंढाणा का नाम पड़ा — सिंह
+  line 17:  6.50s spoken (expected ~ 7.2s), pause after 0.00s  ऐसे शेर के लिए कमेंट में एक बार लिखिए — 
+    line 14 final 4.48s
+    line 15 final 7.98s
+    line 16 final 3.84s
+    line 17 final 8.23s
+Voice done: 18 lines, 101.4s of speech, 3 new requests
 
-Length 106.5s (pauses x1.0, voice speed x1.000)
-  hook_sea     17.95s  0.00-6.26  6.46-14.23  14.53-17.55
-  title         7.49s  0.15-6.79
-  father       10.01s  0.15-7.09  7.34-9.61
-  ganga        14.27s  0.15-6.11  6.36-13.87
-  srivijaya    16.89s  0.15-10.00  10.30-16.49
-  attack       14.38s  0.15-6.25  6.45-13.88
-  legacy        6.75s  0.15-6.45
-  twist        12.21s  0.15-6.66  6.96-11.71
-  end           6.53s  0.15-5.73
-Rendered 9 scenes in 131s
-Final: 11 - Rajendra Chola - Samudra Vijay.mp4 106.4s (timeline 106.5s) 45.9 MB
+Length 107.2s (pauses x1.0, voice speed x1.000)
+  hook_cliff   17.43s  0.00-7.95  8.10-13.56  13.71-17.18
+  title         5.40s  0.15-4.80
+  wedding      12.42s  0.15-6.80  6.95-12.17
+  fort         11.71s  0.15-5.26  5.41-11.51
+  climb         9.20s  0.15-9.00
+  fight        14.52s  0.15-5.41  5.56-11.32  11.47-14.22
+  rally        10.23s  0.15-5.00  5.15-9.93
+  twist        17.30s  0.15-4.63  4.83-12.81  13.11-16.95
+  end           8.98s  0.15-8.38
+Rendered 9 scenes in 78s
+Final: 13 - Tanaji Malusare - Sinhagad.mp4 107.2s (timeline 107.2s) 51.1 MB

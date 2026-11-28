@@ -1,24 +1,50 @@
 Part 1/3 (hook_cliff, title, wedding, fort): 8 lines
-  gemini-2.5-flash-preview-tts: 59.6s audio (request 1/9)
-  new take: 59.6s, 39.6s spoken, 12.7 letters/s
-  speech recognition did not line up (text match 68%) - using pause matching
+  gemini-2.5-flash-preview-tts: 59.4s audio (request 1/9)
+  new take: 59.4s, 35.5s spoken, 12.9 letters/s
+  speech recognition did not line up (text match 77%) - using pause matching
   cut by pause matching
-  line  0:  5.80s spoken (expected ~ 5.7s), pause after 1.99s  आधी रात। सीधी खड़ी चट्टान… और उस पर रस्स
-  line  1:  4.92s spoken (expected ~ 4.9s), pause after 1.94s  ऊपर क़िले में मुग़लों की बड़ी फ़ौज सो रह
-  line  2:  3.34s spoken (expected ~ 2.9s), pause after 1.63s  और उनका सरदार… अपने बेटे की शादी छोड़कर 
-  line  3:  4.37s spoken (expected ~ 4.4s), pause after 1.62s  तानाजी मालुसरे… और कोंढाणा की वो रात, जि
-  line  4:  6.32s spoken (expected ~ 6.0s), pause after 0.73s  तानाजी के घर बेटे की शादी की तैयारी चल र
-  line  5:  5.10s spoken (expected ~ 5.3s), pause after 1.15s  कोंढाणा वापस चाहिए। तानाजी ने एक पल नहीं
-  line  6:  4.76s spoken (expected ~ 5.1s), pause after 0.71s  कोंढाणा, पुणे के पास पहाड़ की चोटी पर एक
-  line  7:  4.95s spoken (expected ~ 5.3s), pause after 0.00s  सामने से हमला नामुमकिन था। तो तानाजी ने 
-    line  0 final 8.72s
-    line  1 final 5.71s
-    line  2 final 3.99s
-    line  3 final 5.61s
-    line  4 final 7.34s
-    line  5 final 6.91s
-    line  6 final 5.68s
-    line  7 final 6.03s
+  line  0:  5.70s spoken (expected ~ 5.5s), pause after 1.58s  आधी रात। सीधी खड़ी चट्टान, और रस्सी के स
+  line  1:  4.47s spoken (expected ~ 4.4s), pause after 1.56s  ऊपर क़िले में मुग़लों की फ़ौज सो रही थी।
+  line  2:  2.91s spoken (expected ~ 2.9s), pause after 1.60s  और उनका सरदार, अपने बेटे की शादी छोड़कर 
+  line  3:  3.65s spoken (expected ~ 3.5s), pause after 1.54s  तानाजी मालुसरे! और वो रात, जिसने एक क़िल
+  line  4:  5.79s spoken (expected ~ 5.1s), pause after 1.48s  घर में बेटे की शादी की तैयारी थी — ढोल, 
+  line  5:  4.09s spoken (expected ~ 4.5s), pause after 1.51s  कोंढाणा वापस चाहिए। तानाजी बोले — पहले क
+  line  6:  4.01s spoken (expected ~ 4.5s), pause after 1.34s  कोंढाणा, पुणे के पास पहाड़ की चोटी पर क़
+  line  7:  4.86s spoken (expected ~ 5.1s), pause after 0.00s  सामने से हमला नामुमकिन। तो तानाजी ने चुन
+    line  0 final 7.95s
+    line  1 final 5.46s
+    line  2 final 3.47s
+    line  3 final 4.65s
+    line  4 final 6.65s
+    line  5 final 5.22s
+    line  6 final 5.11s
+    line  7 final 6.10s
 Part 2/3 (climb, fight, rally): 6 lines
-  gemini-2.5-flash-preview-tts: 429 { "error": { "code": 429, "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-FAILED: daily voice quota of gemini-2.5-flash-preview-tts is used up - run again after it resets (1:30 PM IST)
+  gemini-2.5-flash-preview-tts: 40.1s audio (request 2/9)
+  new take: 40.1s, 26.2s spoken, 14.1 letters/s
+  cut by speech recognition (text match 80%)
+  line  8:  6.74s spoken (expected ~ 6.3s), pause after 1.48s  कहते हैं, एक घोरपड़ की कमर में रस्सी बाँ
+  line  9:  4.36s spoken (expected ~ 3.6s), pause after 1.30s  फिर अँधेरे में गर्जना गूँजी — हर हर महाद
+  line 10:  4.81s spoken (expected ~ 4.8s), pause after 1.24s  तानाजी और उदयभान आमने-सामने। ढाल टूट गई,
+  line 11:  2.32s spoken (expected ~ 2.6s), pause after 1.30s  आख़िरी वार… और दोनों योद्धा ज़मीन पर गिर
+  line 12:  4.13s spoken (expected ~ 4.8s), pause after 1.38s  सरदार गिरा, मावले पीछे भागने लगे। तभी ता
+  line 13:  3.86s spoken (expected ~ 4.1s), pause after 0.00s  अब लौटने का रास्ता नहीं था। या तो जीतो, 
+    line  8 final 8.85s
+    line  9 final 5.26s
+    line 10 final 5.76s
+    line 11 final 2.75s
+    line 12 final 4.85s
+    line 13 final 4.78s
+Part 3/3 (twist, end): 4 lines
+  gemini-2.5-flash-preview-tts: 28.7s audio (request 3/9)
+  new take: 28.7s, 19.3s spoken, 11.2 letters/s
+  cut by speech recognition (text match 86%)
+  line 14:  3.61s spoken (expected ~ 3.2s), pause after 0.87s  जीत की ख़बर आई, पर साथ में तानाजी के जान
+  line 15:  6.13s spoken (expected ~ 5.9s), pause after 0.91s  कहते हैं, शिवाजी महाराज बोले — गड आला, प
+  line 16:  3.08s spoken (expected ~ 3.0s), pause after 0.93s  और उसी दिन से कोंढाणा का नाम पड़ा — सिंह
+  line 17:  6.50s spoken (expected ~ 7.2s), pause after 0.00s  ऐसे शेर के लिए कमेंट में एक बार लिखिए — 
+    line 14 final 4.48s
+    line 15 final 7.98s
+    line 16 final 3.84s
+    line 17 final 8.23s
+Voice done: 18 lines, 101.4s of speech, 3 new requests

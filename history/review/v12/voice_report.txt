@@ -1,36 +1,60 @@
 Part 1/3 (hook_house, title, arrest, car): 7 lines
-  gemini-2.5-flash-preview-tts: 64.5s audio (request 1/9)
-  new take: 64.5s, 38.6s spoken, 12.6 letters/s
-  speech recognition did not line up (text match 69%) - using pause matching
-  cut by pause matching
-  line  0:  5.81s spoken (expected ~ 5.5s), pause after 1.50s  घर के बाहर अंग्रेज़ जासूसों का पहरा… और 
-  line  1:  5.61s spoken (expected ~ 5.5s), pause after 1.38s  जासूसों ने उसे देखा… और जाने दिया। उन्हे
-  line  2:  5.46s spoken (expected ~ 4.7s), pause after 1.37s  वो पठान थे… नेताजी सुभाष चंद्र बोस। और य
-  line  3:  5.20s spoken (expected ~ 5.3s), pause after 1.41s  अंग्रेज़ों ने उन्हें घर में नज़रबंद कर र
-  line  4:  6.30s spoken (expected ~ 6.6s), pause after 1.40s  तो नेताजी ने ऐलान किया — अब मैं किसी से 
-  line  5:  5.89s spoken (expected ~ 6.4s), pause after 1.32s  फिर आई वो रात। भतीजा शिशिर स्टीयरिंग पर…
-  line  6:  4.35s spoken (expected ~ 4.7s), pause after 0.00s  अब वो थे मोहम्मद ज़ियाउद्दीन, एक बीमा एज
-    line  0 final 8.26s
-    line  1 final 7.46s
-    line  2 final 6.96s
-    line  3 final 6.53s
-    line  4 final 8.92s
-    line  5 final 8.06s
-    line  6 final 6.34s
+  gemini-2.5-flash-preview-tts: bad response 'content' {
+  "candidates": [
+    {
+      "finishReason": "OTHER",
+      "index": 0
+    }
+  ],
+  "usageMetadata": {
+    "promptTokenCount": 387,
+    "totalTokenCount": 387,
+    "promptTokensDetails": [
+      {
+
+  gemini-2.5-flash-preview-tts: 38.0s audio (request 2/9)
+  new take: 38.0s, 28.3s spoken, 14.1 letters/s
+  cut by speech recognition (text match 83%)
+  line  0:  5.65s spoken (expected ~ 5.2s), pause after 0.50s  1941, कोलकाता। घर के बाहर अंग्रेज़ जासूस
+  line  1:  3.55s spoken (expected ~ 3.3s), pause after 0.45s  जासूसों ने उसे देखा, और जाने दिया। ये उन
+  line  2:  2.72s spoken (expected ~ 2.4s), pause after 0.48s  क्योंकि वो पठान थे — नेताजी सुभाष चंद्र 
+  line  3:  3.53s spoken (expected ~ 4.1s), pause after 0.51s  अंग्रेज़ों ने उन्हें घर में नज़रबंद किया
+  line  4:  4.32s spoken (expected ~ 4.6s), pause after 0.29s  नेताजी ने ऐलान किया — अब मैं किसी से नही
+  line  5:  4.53s spoken (expected ~ 4.6s), pause after 0.42s  फिर एक रात भतीजा शिशिर गाड़ी लेकर आया, औ
+  line  6:  3.99s spoken (expected ~ 4.1s), pause after 0.00s  अब वो थे मोहम्मद ज़ियाउद्दीन, बीमा एजेंट
+    line  0 final 7.47s
+    line  1 final 4.39s
+    line  2 final 3.32s
+    line  3 final 4.03s
+    line  4 final 5.23s
+    line  5 final 5.18s
+    line  6 final 5.01s
 Part 2/3 (pass, berlin): 5 lines
-  gemini-2.5-flash-preview-tts: 41.3s audio (request 2/9)
-  new take: 41.3s, 25.4s spoken, 12.5 letters/s
-  cut by speech recognition (text match 86%)
-  line  7:  6.93s spoken (expected ~ 6.8s), pause after 1.91s  आगे का रास्ता पहाड़ों से, पैदल। और यहाँ 
-  line  8:  5.73s spoken (expected ~ 5.2s), pause after 1.89s  बर्फ़ीले दर्रे, क़बीलों का इलाक़ा… एक ग़
-  line  9:  4.04s spoken (expected ~ 4.5s), pause after 1.72s  और कोलकाता में? दस दिन तक अंग्रेज़ों को 
-  line 10:  4.39s spoken (expected ~ 4.9s), pause after 2.03s  काबुल से नया पासपोर्ट, नया नाम — ओरलांडो
-  line 11:  4.28s spoken (expected ~ 3.9s), pause after 0.00s  फिर एक पनडुब्बी में आधी दुनिया का समंदर 
-    line  7 final 9.52s
-    line  8 final 8.06s
-    line  9 final 4.84s
-    line 10 final 5.98s
-    line 11 final 5.09s
+  gemini-2.5-flash-preview-tts: 35.0s audio (request 3/9)
+  new take: 35.0s, 18.4s spoken, 15.7 letters/s
+  cut by speech recognition (text match 84%)
+  line  7:  4.63s spoken (expected ~ 4.4s), pause after 1.43s  आगे पहाड़, पैदल। यहाँ उन्होंने गूँगे-बहर
+  line  8:  3.79s spoken (expected ~ 4.1s), pause after 1.27s  बर्फ़ीले दर्रे, क़बीलों का इलाक़ा। एक ग़
+  line  9:  3.41s spoken (expected ~ 3.6s), pause after 1.30s  और कोलकाता में? दस दिन तक अंग्रेज़ों को 
+  line 10:  3.20s spoken (expected ~ 3.3s), pause after 1.27s  काबुल से नया पासपोर्ट, नया नाम — ओरलांडो
+  line 11:  3.33s spoken (expected ~ 3.0s), pause after 0.00s  फिर पनडुब्बी में आधी दुनिया का समंदर पार
+    line  7 final 5.93s
+    line  8 final 5.45s
+    line  9 final 4.30s
+    line 10 final 4.64s
+    line 11 final 4.07s
 Part 3/3 (ina, twist, end): 5 lines
-  gemini-2.5-flash-preview-tts: 429 { "error": { "code": 429, "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://aistudio.google.com/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/rate-limit. \n* Quota exceede
-FAILED: daily voice quota of gemini-2.5-flash-preview-tts is used up - run again after it resets (1:30 PM IST)
+  gemini-2.5-flash-preview-tts: 33.0s audio (request 4/9)
+  new take: 33.0s, 22.7s spoken, 13.1 letters/s
+  cut by speech recognition (text match 89%)
+  line 12:  4.68s spoken (expected ~ 4.2s), pause after 1.14s  वहाँ आज़ाद हिंद फ़ौज की कमान सँभाली, और 
+  line 13:  3.04s spoken (expected ~ 2.6s), pause after 1.05s  तुम मुझे ख़ून दो… मैं तुम्हें आज़ादी दूँ
+  line 14:  4.10s spoken (expected ~ 4.5s), pause after 1.54s  जिस गाड़ी में वो उस रात निकले थे, वो आज 
+  line 15:  3.93s spoken (expected ~ 3.6s), pause after 1.57s  और गोमो स्टेशन का नाम आज है — नेताजी सुभ
+  line 16:  6.94s spoken (expected ~ 7.8s), pause after 0.00s  पर सबसे बड़ा सवाल आज भी बाक़ी है — क्या 
+    line 12 final 5.56s
+    line 13 final 3.45s
+    line 14 final 4.90s
+    line 15 final 4.53s
+    line 16 final 8.39s
+Voice done: 17 lines, 85.9s of speech, 4 new requests
