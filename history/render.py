@@ -9,6 +9,29 @@ OUT = HERE / "out"
 CHROME = os.environ.get("CHROME", "/usr/bin/google-chrome")
 
 
+# long documentaries (story.WIDE = True): the same library on a 16:9 canvas, plus history/wide.js
+WIDE_SWAPS = [
+    ('<canvas id="c" width="1080" height="1920"></canvas>', '<canvas id="c" width="1920" height="1080"></canvas>'),
+    ('const W = 1080, H = 1920;', 'const W = 1920, H = 1080;'),
+    ('function bg(pal, flick = 0, cx = 540, cy = 800) {', 'function bg(pal, flick = 0, cx = 960, cy = 420) {'),
+    ('ctx.createRadialGradient(540, 860, 500, 540, 860, 1250)', 'ctx.createRadialGradient(960, 480, 520, 960, 480, 1250)'),
+    ('ctx.createLinearGradient(0, 1230, 0, 1920)', 'ctx.createLinearGradient(0, 860, 0, 1080)'),
+    ('ctx.fillRect(0, 1230, W, 690)', 'ctx.fillRect(0, 860, W, 220)'),
+    ('ctx.translate(540, 760); ctx.scale(z, z); ctx.translate(-540, -760);', 'ctx.translate(960, 520); ctx.scale(z, z); ctx.translate(-960, -520);'),
+    ('textBlock(txt, 540, 1420, 60, { alpha: al, maxW: 930 })', 'textBlock(txt, 960, 990, 46, { alpha: al, maxW: 1560 })'),
+    ('const lines = wrap(text, 820);', 'const lines = wrap(text, 1500);'),
+    ("textBlock(text, 540, y, size, { font: SERIF, color: GOLD, maxW: 820", "textBlock(text, 960, y, size, { font: SERIF, color: GOLD, maxW: 1500"),
+]
+
+
+def widen(lib):
+    for a, b in WIDE_SWAPS:
+        if a not in lib:
+            sys.exit(f"wide mode: lib.html no longer contains {a!r}")
+        lib = lib.replace(a, b)
+    return lib
+
+
 def compose():
     """The page for this video: the shared library (lib.html) with the video's own scenes put in."""
     import story
@@ -17,9 +40,11 @@ def compose():
     lib = (HERE / "lib.html").read_text(encoding="utf-8")
     js = story.SCENES_JS.read_text(encoding="utf-8")
     if js.startswith("// @common2"):  # videos 07+: common.js plus the v2 toolkit (camera, effects, props)
-        js = "\n".join((HERE / f).read_text(encoding="utf-8") for f in ("common.js", "common2.js")) + "\n" + js
+        js = "\n".join((HERE / f).read_text(encoding="utf-8") for f in ("common.js", "common2.js") + (("wide.js",) if getattr(story, "WIDE", False) else ())) + "\n" + js
     elif js.startswith("// @common"):   # newer videos share helpers in history/common.js
         js = (HERE / "common.js").read_text(encoding="utf-8") + "\n" + js
+    if getattr(story, "WIDE", False):
+        lib = widen(lib)
     page.write_text(lib.replace("/*SCENES*/", js), encoding="utf-8")
     return page
 
