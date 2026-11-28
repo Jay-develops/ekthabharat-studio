@@ -539,7 +539,7 @@ function endCard(t, q, o = {}) {
   overlay(() => {
     textBlock(q, 540, 470, 80, { font: SERIF, color: GOLD, maxW: 880, alpha: prog(t, 0.1, 0.7), glow: 'rgba(255,160,60,0.7)', sw: 13 });
     chip('कमेंट में बताइए 👇', 540, 760, 50, prog(t, 0.8, 1.3));
-    if (o.follow !== false) chip('फ़ॉलो करें  ·  हर रात 9:30 बजे नई कहानी', 540, 860, 40, prog(t, 1.3, 1.8), { color: '#ffd9a0' });
+    if (o.follow !== false) chip('फ़ॉलो करें  ·  हर सुबह 9 बजे नई कहानी', 540, 860, 40, prog(t, 1.3, 1.8), { color: '#ffd9a0' });
   });
 }
 // 1930s motor car (side view); o: {face, lights, spin}

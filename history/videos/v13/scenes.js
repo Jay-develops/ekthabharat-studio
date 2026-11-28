@@ -1,5 +1,6 @@
 // @common2
 // ---------------- video 13 - Tanaji Malusare, Sinhagad ----------------
+Object.assign(PAL, { night: ['#8fe0c0', '#1e6b5a', '#03130e'], dawn: ['#ffd0a8', '#d8577a', '#2a0828'], day: ['#e2f3c6', '#6fa560', '#122a10'], battle: ['#ff8a6a', '#8a1038', '#16020c'] });   // moonlit Sahyadri green look
 const TANAJI = { hat: 'pagdi', moustache: true, cloth: SAFF };
 const SHIVAJI = { hat: 'pagdi', beard: true, cloth: '#d4a017' };
 function rope(x, y0, y1, t, sway = 1) { ctx.save(); ctx.strokeStyle = '#2a1408'; ctx.lineWidth = 4; ctx.beginPath(); ctx.moveTo(x, y0); ctx.quadraticCurveTo(x + Math.sin(t * 1.5) * 20 * sway, (y0 + y1) / 2, x + Math.sin(t * 1.2 + 1) * 10 * sway, y1); ctx.stroke(); ctx.restore(); }
@@ -155,4 +156,4 @@ S.twist = (t) => {
   grade('gold', t, 0.4);
 };
 
-S.end = (t) => endCard(t, 'क्या आप कभी सिंहगढ़ क़िला गए हैं?');
+S.end = (t) => endCard(t, 'तानाजी के लिए एक बार: जय भवानी!');

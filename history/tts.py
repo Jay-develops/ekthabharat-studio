@@ -7,7 +7,7 @@ The take is then cut into its lines at the pauses. Safeguards (added after a bro
   * cut points are matched on SPOKEN time, so dramatic pauses inside a line do not move a cut;
   * every cut line is checked against its text length; if a part still looks wrong, that part is
     recorded again line by line (one request per line) while the daily budget allows;
-  * long silences inside a line are shortened to 0.6 s, so there is never dead air.
+  * long silences inside a line are shortened to 0.28 s, so there is never dead air.
 Every decision is logged in out/voice_report.txt. Writes out/lines/NNN.wav and out/durations.json.
 """
 import base64, hashlib, json, os, subprocess, sys, time, wave
@@ -299,7 +299,7 @@ def split(a, idx):
 
 
 def tidy(a):
-    """Trim the ends and shorten any silence inside a line to 0.6 s (no dead air)."""
+    """Trim the ends and shorten any silence inside a line to 0.28 s (no dead air)."""
     sil = frames(a)
     voiced = np.where(~sil)[0]
     if not len(voiced):
@@ -309,7 +309,7 @@ def tidy(a):
         if sil[f]:
             run.append(f); continue
         if run:
-            keep += run if len(run) <= 0.6 * FS else run[:int(0.3 * FS)] + run[-int(0.3 * FS):]
+            keep += run if len(run) <= 0.28 * FS else run[:int(0.14 * FS)] + run[-int(0.14 * FS):]
             run = []
         keep.append(f)
     pad = np.zeros(int(0.04 * SR), np.int16)

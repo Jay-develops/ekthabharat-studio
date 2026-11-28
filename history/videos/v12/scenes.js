@@ -1,5 +1,6 @@
 // @common2
 // ---------------- video 12 - Netaji's great escape ----------------
+Object.assign(PAL, { night: ['#a9d2f0', '#2e5f8f', '#050f1c'], dawn: ['#f6d9cf', '#8d8fc0', '#1a2142'], day: ['#e8f1f5', '#8fb3c9', '#1c3040'] });   // icy winter-night look for this video
 const NETAJI = { hat: 'none', hat2: 'cap', glasses: true, coat: true, cloth: '#5b6b3a' };
 const PATHAN = { hat: 'pagdi', beard: true, coat: true, glasses: true };
 const ERA = 0.45;
@@ -159,4 +160,4 @@ S.twist = (t) => {
   grade('archival', t, ERA * 0.6);
 };
 
-S.end = (t) => endCard(t, 'नेताजी की कौन-सी बात आपको प्रेरित करती है?');
+S.end = (t) => endCard(t, 'क्या 1945 में सच में नेताजी की मौत हुई थी?');

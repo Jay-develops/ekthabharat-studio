@@ -1,5 +1,6 @@
 // @common2
 // ---------------- video 14 - Prithviraj Chauhan ----------------
+Object.assign(PAL, { day: ['#fff3cf', '#eab44c', '#5a3a0e'], battle: ['#f8e6a8', '#c9772e', '#2c1406'], night: ['#cdb0ff', '#55309a', '#0d0624'], dawn: ['#ffe2b8', '#f0906a', '#3a1244'] });   // desert gold + royal purple look
 const PRITHVI = { hat: 'pagdi', moustache: true, cloth: '#c0392b' };
 const GHORI = { hat: 'turban', beard: true, cloth: '#2e6b3a' };
 // an archer: bow in the front hand, string pulled back by `draw` (0..1); blind = cloth over the eyes
@@ -150,4 +151,4 @@ S.twist = (t) => {
     scroll(540, 420, 520, 220, prog(t, at(1, 0.4), at(1, 0.4) + 0.5), ['पृथ्वीराज रासो', 'सदियों पुरानी लोककथा'], {}); }
 };
 
-S.end = (t) => endCard(t, 'आप क्या मानते हैं: इतिहास, या लोककथा?');
+S.end = (t) => endCard(t, 'ग़ोरी को छोड़ना: बड़प्पन या ग़लती?');
