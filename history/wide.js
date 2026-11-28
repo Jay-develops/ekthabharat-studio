@@ -163,3 +163,6 @@ function wideEnd(t, q) {
     chip('सब्सक्राइब करें  ·  हर सुबह 9 बजे नई कहानी', CX, 680, 42, prog(t, 1.3, 1.8), { color: '#ffd9a0' });
   });
 }
+
+// 16:9: headlines use the full width and default to the centre (the portrait helper wraps at 960px around x=540)
+{ const _slam = slam; slam = function (text, y, t, t0, size = 120, o = {}) { return _slam(text, y, t, t0, size, Object.assign({ maxW: 1700, x: CX }, o)); }; }
