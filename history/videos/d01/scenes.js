@@ -61,8 +61,8 @@ S.babur = (t) => {
       land(t, PAL.dusk3, { seed: 31, hy1: 720 });
       palace(960, GY - 10, 1.25);
       flag(1200, GY - 520, 130, 80, t, '#2a6a3a');
-      stamp('दिल्ली · आगरा', CX, 230, t, at(3, 0.15), { size: 70, color: '#3a7a4a' });
-      slam('मुग़ल राज की शुरुआत', 330, t, at(3, 0.55), 80, { x: CX });
+      stamp('दिल्ली · आगरा', CX, 150, t, at(3, 0.15), { size: 70, color: '#3a7a4a' });
+      slam('मुग़ल राज की शुरुआत', 300, t, at(3, 0.55), 80, { x: CX });
     }],
     [4, (t) => {
       land(t, PAL.dusk2, { seed: 41, moon: [1500, 240, 60], stars: 0.5 });
@@ -300,10 +300,10 @@ S.shivaji = (t) => {
     [0, (t) => {
       cam(t, { z: 1 + 0.05 * prog(t, 0, cue(2)[0]), fx: 960, fy: 520 });
       land(t, PAL.dawn, { sun: [960, 560, 170], seed: 221, hy1: 700, ha1: 300 });
-      cliffFort(1500, GY - 40, 1.0, t);
+      cliffFort(1560, GY - 10, 0.5, t);
       rays(960, 560, t, 0.12);
       hero(860, GY, 1.1, t, { hat: 'crown', beard: true, raise: 0.4, cloth: SAFF });
-      bhagwa(1500, GY - 520, 320, t);
+      bhagwa(1240, GY, 380, t);
       nameplate('छत्रपति शिवाजी महाराज', '1630–1680', fadeAt(t, at(0, 0.6), 0.4));
       if (t > cue(1)[0]) slam('हिंदवी स्वराज्य', 260, t, at(1, 0.3), 100, { x: CX });
     }],
@@ -332,7 +332,7 @@ S.shivaji = (t) => {
       cam(t, { z: 1 + 0.05 * prog(t, cue(6)[0], cue(7)[1]), fx: 960, fy: 480 });
       land(t, PAL.warm, { sun: [960, 400, 170], seed: 261 });
       rays(960, 400, t, 0.15);
-      cliffFort(960, GY - 60, 1.2, t);
+      cliffFort(960, GY - 20, 0.6, t);
       crowd(t, { x0: -60, x1: W + 60, y: GY + 20, n: 18, s: 0.5, flags: 0.5, fists: 0.5, rows: 3, seed: 31 });
       hero(960, GY - 170, 0.75, t, { hat: 'crown', beard: true, raise: prog(t, at(6, 0.6), at(6, 0.8)), cloth: SAFF });
       topTag('रायगढ़ · 6 जून 1674', fadeAt(t, cue(6)[0], 0.4));
@@ -355,7 +355,7 @@ S.lachit = (t) => {
       land(t, PAL.river, { seed: 271, moon: [1500, 220, 50] });
       water(GY - 120, t, 0.7);
       for (let i = 0; i < 3; i++) mughalShip(1100 + i * 300 - prog(t, cue(1)[0], cue(2)[1]) * 200, GY - 60, 0.8, t, {});
-      if (t < cue(3)[0]) { ctx.save(); ctx.fillStyle = INK; ctx.fillRect(250, GY - 70, 300, 30); ctx.restore(); actor(400, GY - 70, 0.7, t, { seated: true, hat: 'pagdi', fa: [0.2, 0.3], still: true }); nameplate('लाचित बोरफुकन', 'अहोम सेनापति · बुख़ार में', fadeAt(t, at(1, 0.5), 0.4)); }
+      if (t < cue(3)[0]) { ctx.save(); ctx.fillStyle = INK; ctx.fillRect(250, GY - 70, 300, 30); ctx.restore(); actor(400, GY - 70, 0.7, t, { seated: true, hat: 'pagdi', fa: [0.2, 0.3], still: true }); nameplate('लाचित बोरफुकन', 'अहोम सेनापति · बुख़ार में', fadeAt(t, at(1, 0.5), 0.4) * (1 - prog(t, cue(2)[0] + 0.2, at(2, 0.5)))); }
       if (t > cue(2)[0]) quoteCard('मेरा मामा, मेरे देश से बड़ा नहीं', 250, fadeAt(t, at(2, 0.55), 0.5) * (1 - prog(t, cue(3)[0] - 0.3, cue(3)[0])), 58);
       grade('night', t, 0.3);
     }],
@@ -432,11 +432,11 @@ S.tarabai = (t) => {
     [3, (t) => {
       cam(t, { z: 1 + 0.05 * prog(t, cue(3)[0], cue(4)[1]), fx: 960, fy: 520 });
       land(t, PAL.dawn, { sun: [1500, 380, 120], seed: 341, hy1: 700, ha1: 280 });
-      cliffFort(300, GY - 40, 0.8, t); cliffFort(1700, GY - 40, 0.8, t);
+      cliffFort(170, GY - 10, 0.42, t); cliffFort(1770, GY - 10, 0.42, t);
       const k = prog(t, at(4, 0.1), cue(4)[1]);
       rider(lerp(500, 1400, k), GY, 1.0, t, { woman: true, hat: 'none', wpn: 'sword', rear: 0.2 + 0.15 * Math.sin(t * 3) });
       if (t > cue(4)[0]) troop(t - cue(4)[0], { y: GY + 10, n: 6, s: 0.5, dir: 1, kind: 'sword', banner: 2, x: -100, speed: 200 });
-      nameplate('महारानी ताराबाई', 'मराठा साम्राज्य की संरक्षक', fadeAt(t, at(3, 0.5), 0.4));
+      nameplate('महारानी ताराबाई', 'मराठा साम्राज्य की संरक्षक', fadeAt(t, at(3, 0.5), 0.4) * (1 - prog(t, cue(5)[0] - 0.4, cue(5)[0])));
       if (t > cue(5)[0]) quoteCard('असली ताक़त कोई मंत्री नहीं, ख़ुद ताराबाई थीं — जदुनाथ सरकार', 250, fadeAt(t, cue(5)[0] + 0.2, 0.5) * (1 - prog(t, cue(6)[0] - 0.3, cue(6)[0])), 50);
       if (t > cue(6)[0]) overlay(() => { chip('दुर्गादास राठौड़ · मारवाड़', 560, 190, 42, fadeAt(t, cue(6)[0], 0.4)); chip('छत्रसाल · बुंदेलखंड', 1360, 190, 42, fadeAt(t, at(6, 0.4), 0.4)); });
     }],
@@ -467,9 +467,9 @@ S.delhi = (t) => {
       land(t, PAL.warm, { sun: [960, 380, 150], seed: 371 });
       palace(1350, GY - 10, 1.2); wall(560, 280, 900, 2050);
       for (let i = 0; i < 5; i++) rider(200 + i * 150, GY, 0.75, t, { hat: 'pagdi', wpn: 'spear', ph: i, rear: i === 2 ? 0.5 : 0 });
-      bhagwa(700, GY - 360, 360, t);
-      topTag('दिल्ली · 1737', fadeAt(t, cue(2)[0], 0.4));
-      if (t > cue(3)[0]) slam('पानीपत की तोपों से… मराठा घोड़ों की टापों तक', 240, t, at(3, 0.4), 70, { x: CX });
+      bhagwa(1000, GY, 420, t);
+      topTag('दिल्ली · 1737', fadeAt(t, cue(2)[0], 0.4) * (1 - prog(t, cue(3)[0], at(3, 0.3))));
+      if (t > cue(3)[0]) slam('पानीपत की तोपों से… मराठा घोड़ों की टापों तक', 300, t, at(3, 0.4), 70, { x: CX });
     }],
     [4, (t) => {
       cam(t, { z: 1 + 0.06 * prog(t, cue(4)[0], cue(5)[1]), fx: 960, fy: 560 });
