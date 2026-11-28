@@ -1,0 +1,95 @@
+name: Ek Tha Bharat - make a documentary
+
+# Long 16:9 videos with the free open-source voice (Indic Parler-TTS, no quota).
+#   mode = preview : stills of every line + thumbnail, no voice (a few minutes) -> history/review/<video>/preview.jpg
+#   mode = full    : voice + render + music -> release <video> with the mp4 and the thumbnail
+on:
+  workflow_dispatch:
+    inputs:
+      video:
+        description: "Folder in history/videos, e.g. d01"
+        default: "d01"
+      mode:
+        description: "preview or full"
+        default: "preview"
+      speaker:
+        description: "Indic Parler voice: Rohit or Aman"
+        default: "Rohit"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: doc-${{ github.event.inputs.video }}
+  cancel-in-progress: false
+
+jobs:
+  make:
+    runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      VIDEO: ${{ github.event.inputs.video }}
+      PARLER_SPEAKER: ${{ github.event.inputs.speaker }}
+      HF_TOKEN: ${{ secrets.HF_TOKEN }}
+      HUGGING_FACE_HUB_TOKEN: ${{ secrets.HF_TOKEN }}
+      GH_TOKEN: ${{ github.token }}
+      MAX_SECONDS: "1200"
+      WORKERS: "4"
+      CHROME: /usr/bin/google-chrome
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.10"
+      - name: Tools
+        timeout-minutes: 40
+        run: |
+          timeout 120 sudo apt-get update -qq || echo "package index update was slow - skipped"
+          for i in 1 2 3; do which ffmpeg >/dev/null && break; timeout 420 sudo apt-get install -y -qq --no-install-recommends -o Acquire::Retries=3 ffmpeg || sleep 20; done
+          for i in 1 2 3; do fc-list | grep -qi FreeSans && break; timeout 300 sudo apt-get install -y -qq --no-install-recommends -o Acquire::Retries=3 fonts-freefont-ttf || sleep 20; done
+          pip install -q requests numpy pillow playwright faster-whisper soundfile
+          if [ "${{ github.event.inputs.mode }}" = "full" ]; then
+            pip install -q torch==2.7.1 torchaudio==2.7.1 --index-url https://download.pytorch.org/whl/cpu
+            pip install -q sentencepiece git+https://github.com/huggingface/parler-tts.git
+            pip install -q -U "protobuf>=5.28"
+          fi
+          google-chrome --version
+
+      - name: Preview
+        if: github.event.inputs.mode != 'full'
+        run: |
+          python history/preview.py
+          git config user.name "etb-bot"; git config user.email "etb-bot@users.noreply.github.com"
+          git add history/review/$VIDEO
+          git commit -q -m "Preview: $VIDEO" && git push -q || echo "nothing to commit"
+
+      - name: Voice (Indic Parler, free)
+        if: github.event.inputs.mode == 'full'
+        timeout-minutes: 200
+        run: python history/tts_parler.py
+
+      - name: Render and mix
+        if: github.event.inputs.mode == 'full'
+        timeout-minutes: 140
+        run: |
+          python history/build.py
+          python history/preview.py || true
+
+      - name: Release
+        if: github.event.inputs.mode == 'full'
+        run: |
+          mp4=$(ls history/out/final/*.mp4 | head -1); stem=$(basename "$mp4" .mp4)
+          mkdir -p final; cp "$mp4" final/
+          cp history/review/$VIDEO/thumb.jpg "final/$stem.jpg" 2>/dev/null || true
+          gh release delete $VIDEO -y --cleanup-tag 2>/dev/null || true
+          gh release create $VIDEO final/* -t "$stem" -n "Documentary $VIDEO (16:9, free voice). Thumbnail included."
+
+      - name: Keep voice takes and review
+        if: always() && github.event.inputs.mode == 'full'
+        run: |
+          mkdir -p history/review/$VIDEO
+          cp history/out/voice_report.txt history/review/$VIDEO/ 2>/dev/null || true
+          cp history/review/*.* history/review/$VIDEO/ 2>/dev/null || true
+          git config user.name "etb-bot"; git config user.email "etb-bot@users.noreply.github.com"
+          git add -A history/voice_cache history/review 2>/dev/null || true
+          git commit -q -m "Voice takes and review: $VIDEO" && git pull -q --rebase && git push -q || echo "nothing to keep"
